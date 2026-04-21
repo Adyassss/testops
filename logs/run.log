@@ -1,0 +1,3466 @@
+>>> Running tests with profile: api
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "yWnYkc",
+    "password": "YTEXXzmmdj891$$",
+    "role": "USER",
+    "name": "6de089aa"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "ZDEL1",
+    "password": "RSUQEqajtv039$#",
+    "role": "USER",
+    "name": "8d076afe"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "D1TT6acAHxx6T",
+    "password": "JCFQTtgisa202#$",
+    "role": "USER",
+    "name": "f44be379"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "cd8Woy7v6BbSUd",
+    "password": "NSRLIalzxu405$$",
+    "role": "USER",
+    "name": "4353c194"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic WkRFTDE6UlNVUUVxYWp0djAzOSQj
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "username": "ZDEL1",
+    "password": "$2a$10$hm6Sus2MUoam4Z79Oj8H3uLK./3X0OngTB2mbCzYZwJEl003YK/nS",
+    "name": "8d076afe",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 8,
+    "username": "cd8Woy7v6BbSUd",
+    "password": "$2a$10$BlHXDaKGQn7y6tFH6dvLtu3uekoN8htEpLpMMXKmoqCzfq9Ckk5/q",
+    "name": "4353c194",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic RDFUVDZhY0FIeHg2VDpKQ0ZRVHRnaXNhMjAyIyQ=
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 11,
+    "username": "D1TT6acAHxx6T",
+    "password": "$2a$10$axKDJxDDMZiEYvTOJj3veOKMcMeHueUXMBzCPlvYWxO3BBiIRsOam",
+    "name": "f44be379",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic eVduWWtjOllURVhYem1tZGo4OTEkJA==
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 12,
+    "username": "yWnYkc",
+    "password": "$2a$10$4IXhRqhAjDuNIp56wdVt1e9GrJpfgAUUP7uWtihyyaC2yRnphAd4q",
+    "name": "6de089aa",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic RDFUVDZhY0FIeHg2VDpKQ0ZRVHRnaXNhMjAyIyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "DjPsu ONfQj"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WkRFTDE6UlNVUUVxYWp0djAzOSQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic eVduWWtjOllURVhYem1tZGo4OTEkJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 8,
+    "accountNumber": "ACC8",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 9,
+    "accountNumber": "ACC9",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "accountNumber": "ACC10",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "Profile updated successfully",
+    "customer": {
+        "id": 11,
+        "username": "D1TT6acAHxx6T",
+        "password": "$2a$10$axKDJxDDMZiEYvTOJj3veOKMcMeHueUXMBzCPlvYWxO3BBiIRsOam",
+        "name": "DjPsu ONfQj",
+        "role": "USER",
+        "accounts": [
+            
+        ]
+    }
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic eVduWWtjOllURVhYem1tZGo4OTEkJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic RDFUVDZhY0FIeHg2VDpKQ0ZRVHRnaXNhMjAyIyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WkRFTDE6UlNVUUVxYWp0djAzOSQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 9,
+    "balance": 21.13
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 12,
+    "username": "yWnYkc",
+    "password": "$2a$10$4IXhRqhAjDuNIp56wdVt1e9GrJpfgAUUP7uWtihyyaC2yRnphAd4q",
+    "name": "6de089aa",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 8,
+            "accountNumber": "ACC8",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 11,
+    "username": "D1TT6acAHxx6T",
+    "password": "$2a$10$axKDJxDDMZiEYvTOJj3veOKMcMeHueUXMBzCPlvYWxO3BBiIRsOam",
+    "name": "DjPsu ONfQj",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 9,
+    "accountNumber": "ACC9",
+    "balance": 21.13,
+    "transactions": [
+        {
+            "id": 4,
+            "amount": 21.13,
+            "type": "DEPOSIT",
+            "timestamp": "Mon Apr 20 22:17:29 UTC 2026",
+            "relatedAccountId": 9
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "username": "ZDEL1",
+    "password": "$2a$10$hm6Sus2MUoam4Z79Oj8H3uLK./3X0OngTB2mbCzYZwJEl003YK/nS",
+    "name": "8d076afe",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 10,
+            "accountNumber": "ACC10",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WkRFTDE6UlNVUUVxYWp0djAzOSQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 10,
+    "balance": 874.05
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic eVduWWtjOllURVhYem1tZGo4OTEkJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 8,
+    "balance": 5000.1
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "tG7CFcX7",
+    "password": "STLICwzmjk760$$",
+    "role": "USER",
+    "name": "f8fa7b38"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "accountNumber": "ACC10",
+    "balance": 874.05,
+    "transactions": [
+        {
+            "id": 5,
+            "amount": 874.05,
+            "type": "DEPOSIT",
+            "timestamp": "Mon Apr 20 22:17:29 UTC 2026",
+            "relatedAccountId": 10
+        }
+    ]
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 33
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Connection: close
+
+Deposit amount cannot exceed 5000
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 8,
+    "username": "cd8Woy7v6BbSUd",
+    "password": "$2a$10$BlHXDaKGQn7y6tFH6dvLtu3uekoN8htEpLpMMXKmoqCzfq9Ckk5/q",
+    "name": "4353c194",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 9,
+            "accountNumber": "ACC9",
+            "balance": 21.13,
+            "transactions": [
+                {
+                    "id": 4,
+                    "amount": 21.13,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:29 UTC 2026",
+                    "relatedAccountId": 9
+                }
+            ]
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic eVduWWtjOllURVhYem1tZGo4OTEkJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WkRFTDE6UlNVUUVxYWp0djAzOSQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic dEc3Q0ZjWDc6U1RMSUN3em1qazc2MCQk
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 16,
+    "username": "tG7CFcX7",
+    "password": "$2a$10$Kzf3OLtQlYy56HYvDkSVduGTZ7Aku5miMT16lYpwaEIsRBZdY4NJW",
+    "name": "f8fa7b38",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dEc3Q0ZjWDc6U1RMSUN3em1qazc2MCQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 12,
+    "username": "yWnYkc",
+    "password": "$2a$10$4IXhRqhAjDuNIp56wdVt1e9GrJpfgAUUP7uWtihyyaC2yRnphAd4q",
+    "name": "6de089aa",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 8,
+            "accountNumber": "ACC8",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "username": "ZDEL1",
+    "password": "$2a$10$hm6Sus2MUoam4Z79Oj8H3uLK./3X0OngTB2mbCzYZwJEl003YK/nS",
+    "name": "8d076afe",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 10,
+            "accountNumber": "ACC10",
+            "balance": 874.05,
+            "transactions": [
+                {
+                    "id": 5,
+                    "amount": 874.05,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:29 UTC 2026",
+                    "relatedAccountId": 10
+                }
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "6yjh3fL",
+    "password": "FHXUAaskya966#$",
+    "role": "USER",
+    "name": "1593d266"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "lNiKC8p4g1m",
+    "password": "BQOGDpottm782#$",
+    "role": "USER",
+    "name": "e4f0ad76"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 12,
+    "accountNumber": "ACC12",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/transfer
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "senderAccountId": 9,
+    "receiverAccountId": 12,
+    "amount": 5000.1
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 16,
+    "username": "tG7CFcX7",
+    "password": "$2a$10$Kzf3OLtQlYy56HYvDkSVduGTZ7Aku5miMT16lYpwaEIsRBZdY4NJW",
+    "name": "f8fa7b38",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dEc3Q0ZjWDc6U1RMSUN3em1qazc2MCQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Дмитрий_Иванов"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 56
+Date: Mon, 20 Apr 2026 22:17:29 GMT
+Connection: close
+
+Invalid transfer: insufficient funds or invalid accounts
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Y2Q4V295N3Y2QmJTVWQ6TlNSTElhbHp4dTQwNSQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic bE5pS0M4cDRnMW06QlFPR0Rwb3R0bTc4MiMk
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 18,
+    "username": "lNiKC8p4g1m",
+    "password": "$2a$10$2mKWaIUGil9i97luJ6eoau8ncbE/vdRBb77n29qcEL9D7lE59uJS6",
+    "name": "e4f0ad76",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bE5pS0M4cDRnMW06QlFPR0Rwb3R0bTc4MiMk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic NnlqaDNmTDpGSFhVQWFza3lhOTY2IyQ=
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 19,
+    "username": "6yjh3fL",
+    "password": "$2a$10$0TQ86VVH4ZPnm87E8lBgB.rDetQ.Wpt/uqra33rFnfuKCJXnJzM5K",
+    "name": "1593d266",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 45
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Connection: close
+
+Name must contain two words with letters only
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dEc3Q0ZjWDc6U1RMSUN3em1qazc2MCQk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic NnlqaDNmTDpGSFhVQWFza3lhOTY2IyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 8,
+    "username": "cd8Woy7v6BbSUd",
+    "password": "$2a$10$BlHXDaKGQn7y6tFH6dvLtu3uekoN8htEpLpMMXKmoqCzfq9Ckk5/q",
+    "name": "4353c194",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 12,
+            "accountNumber": "ACC12",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        },
+        {
+            "id": 9,
+            "accountNumber": "ACC9",
+            "balance": 21.13,
+            "transactions": [
+                {
+                    "id": 4,
+                    "amount": 21.13,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:29 UTC 2026",
+                    "relatedAccountId": 9
+                }
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "byBE4XxCS",
+    "password": "EXVUFbpbvf806#$",
+    "role": "USER",
+    "name": "184053a0"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 13,
+    "accountNumber": "ACC13",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bE5pS0M4cDRnMW06QlFPR0Rwb3R0bTc4MiMk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 16,
+    "username": "tG7CFcX7",
+    "password": "$2a$10$Kzf3OLtQlYy56HYvDkSVduGTZ7Aku5miMT16lYpwaEIsRBZdY4NJW",
+    "name": "f8fa7b38",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "YftOfoPQ",
+    "password": "NTXSCcsdye862$#",
+    "role": "USER",
+    "name": "3e53a370"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 14,
+    "accountNumber": "ACC14",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic NnlqaDNmTDpGSFhVQWFza3lhOTY2IyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 19,
+    "username": "6yjh3fL",
+    "password": "$2a$10$0TQ86VVH4ZPnm87E8lBgB.rDetQ.Wpt/uqra33rFnfuKCJXnJzM5K",
+    "name": "1593d266",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 14,
+            "accountNumber": "ACC14",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic NnlqaDNmTDpGSFhVQWFza3lhOTY2IyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 14,
+    "balance": 0.0
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 18,
+    "username": "lNiKC8p4g1m",
+    "password": "$2a$10$2mKWaIUGil9i97luJ6eoau8ncbE/vdRBb77n29qcEL9D7lE59uJS6",
+    "name": "e4f0ad76",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 13,
+            "accountNumber": "ACC13",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bE5pS0M4cDRnMW06QlFPR0Rwb3R0bTc4MiMk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 13,
+    "balance": -0.1
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 22,
+    "username": "byBE4XxCS",
+    "password": "$2a$10$fmm5IYirRHtskPhVsLghouVIzW7yuJQdYPxR5wzhhNr6kshI.KZbu",
+    "name": "184053a0",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 36
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Connection: close
+
+Deposit amount must be at least 0.01
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic NnlqaDNmTDpGSFhVQWFza3lhOTY2IyQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic WWZ0T2ZvUFE6TlRYU0Njc2R5ZTg2MiQj
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 23,
+    "username": "YftOfoPQ",
+    "password": "$2a$10$RqNQaLlZozbBv8XK/Ql4heTMQPBKc3srxgQp0gcqn9Gclz.dJqIZm",
+    "name": "3e53a370",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WWZ0T2ZvUFE6TlRYU0Njc2R5ZTg2MiQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 36
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Connection: close
+
+Deposit amount must be at least 0.01
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bE5pS0M4cDRnMW06QlFPR0Rwb3R0bTc4MiMk
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 17,
+    "accountNumber": "ACC17",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "balance": 159.72
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 19,
+    "username": "6yjh3fL",
+    "password": "$2a$10$0TQ86VVH4ZPnm87E8lBgB.rDetQ.Wpt/uqra33rFnfuKCJXnJzM5K",
+    "name": "1593d266",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 14,
+            "accountNumber": "ACC14",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 23,
+    "username": "YftOfoPQ",
+    "password": "$2a$10$RqNQaLlZozbBv8XK/Ql4heTMQPBKc3srxgQp0gcqn9Gclz.dJqIZm",
+    "name": "3e53a370",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WWZ0T2ZvUFE6TlRYU0Njc2R5ZTg2MiQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": ""
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "uOwwzfCCQd",
+    "password": "KSBZLupapu450$$",
+    "role": "USER",
+    "name": "fe5e16e5"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 18,
+    "username": "lNiKC8p4g1m",
+    "password": "$2a$10$2mKWaIUGil9i97luJ6eoau8ncbE/vdRBb77n29qcEL9D7lE59uJS6",
+    "name": "e4f0ad76",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 13,
+            "accountNumber": "ACC13",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "NNzA5s",
+    "password": "CWKISokklf456#$",
+    "role": "USER",
+    "name": "184630f1"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 17,
+    "accountNumber": "ACC17",
+    "balance": 159.72,
+    "transactions": [
+        {
+            "id": 8,
+            "amount": 159.72,
+            "type": "DEPOSIT",
+            "timestamp": "Mon Apr 20 22:17:31 UTC 2026",
+            "relatedAccountId": 17
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 45
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Connection: close
+
+Name must contain two words with letters only
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic WWZ0T2ZvUFE6TlRYU0Njc2R5ZTg2MiQj
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 22,
+    "username": "byBE4XxCS",
+    "password": "$2a$10$fmm5IYirRHtskPhVsLghouVIzW7yuJQdYPxR5wzhhNr6kshI.KZbu",
+    "name": "184053a0",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 17,
+            "accountNumber": "ACC17",
+            "balance": 159.72,
+            "transactions": [
+                {
+                    "id": 8,
+                    "amount": 159.72,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:31 UTC 2026",
+                    "relatedAccountId": 17
+                }
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic dU93d3pmQ0NRZDpLU0JaTHVwYXB1NDUwJCQ=
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 24,
+    "username": "uOwwzfCCQd",
+    "password": "$2a$10$q5bHsIO672QRwhjvKusOd.l8L1/HaVZAV1me35vqCCKRhSoJn6D7O",
+    "name": "fe5e16e5",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dU93d3pmQ0NRZDpLU0JaTHVwYXB1NDUwJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 23,
+    "username": "YftOfoPQ",
+    "password": "$2a$10$RqNQaLlZozbBv8XK/Ql4heTMQPBKc3srxgQp0gcqn9Gclz.dJqIZm",
+    "name": "3e53a370",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "rYe2LO2",
+    "password": "AZFUVkqmuf784##",
+    "role": "USER",
+    "name": "d5c175da"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic Tk56QTVzOkNXS0lTb2trbGY0NTYjJA==
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 25,
+    "username": "NNzA5s",
+    "password": "$2a$10$Xp8dTwJazGaz0G/525vg9OqYAgixZhApzwEs939SfymqY9D3IZ.bu",
+    "name": "184630f1",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Tk56QTVzOkNXS0lTb2trbGY0NTYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 24,
+    "username": "uOwwzfCCQd",
+    "password": "$2a$10$q5bHsIO672QRwhjvKusOd.l8L1/HaVZAV1me35vqCCKRhSoJn6D7O",
+    "name": "fe5e16e5",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:30 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 20,
+    "accountNumber": "ACC20",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dU93d3pmQ0NRZDpLU0JaTHVwYXB1NDUwJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "AliceJohnson"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/transfer
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "senderAccountId": 17,
+    "receiverAccountId": 20,
+    "amount": 0.0
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 25,
+    "username": "NNzA5s",
+    "password": "$2a$10$Xp8dTwJazGaz0G/525vg9OqYAgixZhApzwEs939SfymqY9D3IZ.bu",
+    "name": "184630f1",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Tk56QTVzOkNXS0lTb2trbGY0NTYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Bo"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 37
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Connection: close
+
+Transfer amount must be at least 0.01
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 45
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Connection: close
+
+Name must contain two words with letters only
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic dU93d3pmQ0NRZDpLU0JaTHVwYXB1NDUwJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YnlCRTRYeENTOkVYVlVGYnBidmY4MDYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic clllMkxPMjpBWkZVVmtxbXVmNzg0IyM=
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 26,
+    "username": "rYe2LO2",
+    "password": "$2a$10$nogLOVg00q.K/sNQSks91O2XlVqeX6QtWxmt/7CLiLDxdM6EE6YJ2",
+    "name": "d5c175da",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic clllMkxPMjpBWkZVVmtxbXVmNzg0IyM=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 45
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Connection: close
+
+Name must contain two words with letters only
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic Tk56QTVzOkNXS0lTb2trbGY0NTYjJA==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 24,
+    "username": "uOwwzfCCQd",
+    "password": "$2a$10$q5bHsIO672QRwhjvKusOd.l8L1/HaVZAV1me35vqCCKRhSoJn6D7O",
+    "name": "fe5e16e5",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 26,
+    "username": "rYe2LO2",
+    "password": "$2a$10$nogLOVg00q.K/sNQSks91O2XlVqeX6QtWxmt/7CLiLDxdM6EE6YJ2",
+    "name": "d5c175da",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 22,
+    "username": "byBE4XxCS",
+    "password": "$2a$10$fmm5IYirRHtskPhVsLghouVIzW7yuJQdYPxR5wzhhNr6kshI.KZbu",
+    "name": "184053a0",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 17,
+            "accountNumber": "ACC17",
+            "balance": 159.72,
+            "transactions": [
+                {
+                    "id": 8,
+                    "amount": 159.72,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:31 UTC 2026",
+                    "relatedAccountId": 17
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "accountNumber": "ACC20",
+            "balance": 0.0,
+            "transactions": [
+                
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "mPOWp0O",
+    "password": "QOMDGghltv052$$",
+    "role": "USER",
+    "name": "b5dac2e3"
+}
+Request method:	PUT
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic clllMkxPMjpBWkZVVmtxbXVmNzg0IyM=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "CharliefdsdfdfB"
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/admin/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic YWRtaW46YWRtaW4=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "Rgk",
+    "password": "KAPZXfzdmh015##",
+    "role": "USER",
+    "name": "616f3143"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 25,
+    "username": "NNzA5s",
+    "password": "$2a$10$Xp8dTwJazGaz0G/525vg9OqYAgixZhApzwEs939SfymqY9D3IZ.bu",
+    "name": "184630f1",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 45
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Connection: close
+
+Name must contain two words with letters only
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic clllMkxPMjpBWkZVVmtxbXVmNzg0IyM=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 27,
+    "username": "mPOWp0O",
+    "password": "$2a$10$Zx1hPXPP4e/fzZC3IPJD5O8D4h/XJ3SlD1iy7wy6JBxGe6NZx8AKK",
+    "name": "b5dac2e3",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Authorization: Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 28,
+    "username": "Rgk",
+    "password": "$2a$10$8DM/sbikxJ97e/4QPtwZfuXqCzeoqduNUYvkOClh0kQq2h9uVsXJO",
+    "name": "616f3143",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 26,
+    "username": "rYe2LO2",
+    "password": "$2a$10$nogLOVg00q.K/sNQSks91O2XlVqeX6QtWxmt/7CLiLDxdM6EE6YJ2",
+    "name": "d5c175da",
+    "role": "USER",
+    "accounts": [
+        
+    ]
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 21,
+    "accountNumber": "ACC21",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 21,
+    "balance": 168.81
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 22,
+    "accountNumber": "ACC22",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/deposit
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 22,
+    "balance": 305.45
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 21,
+    "accountNumber": "ACC21",
+    "balance": 168.81,
+    "transactions": [
+        {
+            "id": 11,
+            "amount": 168.81,
+            "type": "DEPOSIT",
+            "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+            "relatedAccountId": 21
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 22,
+    "accountNumber": "ACC22",
+    "balance": 305.45,
+    "transactions": [
+        {
+            "id": 12,
+            "amount": 305.45,
+            "type": "DEPOSIT",
+            "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+            "relatedAccountId": 22
+        }
+    ]
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 27,
+    "username": "mPOWp0O",
+    "password": "$2a$10$Zx1hPXPP4e/fzZC3IPJD5O8D4h/XJ3SlD1iy7wy6JBxGe6NZx8AKK",
+    "name": "b5dac2e3",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 21,
+            "accountNumber": "ACC21",
+            "balance": 168.81,
+            "transactions": [
+                {
+                    "id": 11,
+                    "amount": 168.81,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 21
+                }
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 28,
+    "username": "Rgk",
+    "password": "$2a$10$8DM/sbikxJ97e/4QPtwZfuXqCzeoqduNUYvkOClh0kQq2h9uVsXJO",
+    "name": "616f3143",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 22,
+            "accountNumber": "ACC22",
+            "balance": 305.45,
+            "transactions": [
+                {
+                    "id": 12,
+                    "amount": 305.45,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 22
+                }
+            ]
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "dummy": ""
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 23,
+    "accountNumber": "ACC23",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/transfer
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "senderAccountId": 21,
+    "receiverAccountId": 23,
+    "amount": 168.81
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 24,
+    "accountNumber": "ACC24",
+    "balance": 0.0,
+    "transactions": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	http://backend:4111/api/v1/accounts/transfer
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "senderAccountId": 22,
+    "receiverAccountId": 24,
+    "amount": -0.1
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "message": "Transfer successful",
+    "senderAccountId": 21,
+    "receiverAccountId": 23,
+    "amount": 168.81
+}
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic bVBPV3AwTzpRT01ER2dobHR2MDUyJCQ=
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Content-Length: 37
+Date: Mon, 20 Apr 2026 22:17:31 GMT
+Connection: close
+
+Transfer amount must be at least 0.01
+Request method:	GET
+Request URI:	http://backend:4111/api/v1/customer/profile
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Authorization=Basic UmdrOktBUFpYZnpkbWgwMTUjIw==
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:32 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 27,
+    "username": "mPOWp0O",
+    "password": "$2a$10$Zx1hPXPP4e/fzZC3IPJD5O8D4h/XJ3SlD1iy7wy6JBxGe6NZx8AKK",
+    "name": "b5dac2e3",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 23,
+            "accountNumber": "ACC23",
+            "balance": 168.81,
+            "transactions": [
+                {
+                    "id": 14,
+                    "amount": 168.81,
+                    "type": "TRANSFER_IN",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 21
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "accountNumber": "ACC21",
+            "balance": 0.0,
+            "transactions": [
+                {
+                    "id": 13,
+                    "amount": 168.81,
+                    "type": "TRANSFER_OUT",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 23
+                },
+                {
+                    "id": 11,
+                    "amount": 168.81,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 21
+                }
+            ]
+        }
+    ]
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 20 Apr 2026 22:17:32 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 28,
+    "username": "Rgk",
+    "password": "$2a$10$8DM/sbikxJ97e/4QPtwZfuXqCzeoqduNUYvkOClh0kQq2h9uVsXJO",
+    "name": "616f3143",
+    "role": "USER",
+    "accounts": [
+        {
+            "id": 22,
+            "accountNumber": "ACC22",
+            "balance": 305.45,
+            "transactions": [
+                {
+                    "id": 12,
+                    "amount": 305.45,
+                    "type": "DEPOSIT",
+                    "timestamp": "Mon Apr 20 22:17:32 UTC 2026",
+                    "relatedAccountId": 22
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "accountNumber": "ACC24",
+            "b[INFO] Maven Build Time Profiler started. (Version 0.5.0)
+[INFO] Scanning for projects...
+Downloading from central: https://repo[INFO] Maven Build Time Profiler started. (Version 0.5.0)
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.pom
+Progress (1): 806 BProgress (1): 2.1 kBProgress (1): 5.7 kBProgress (1): 8.4 kBProgress (1): 9.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.pom (9.8 kB at 18 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/3.0.1/maven-release-3.0.1.pom
+Progress (1): 805 BProgress (1): 1.9 kBProgress (1): 3.7 kBProgress (1): 9.4 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/3.0.1/maven-release-3.0.1.pom (11 kB at 156 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.jar
+Progress (1): 0.9/61 kBProgress (1): 2.3/61 kBProgress (1): 3.6/61 kBProgress (1): 5.0/61 kBProgress (1): 6.4/61 kBProgress (1): 7.7/61 kBProgress (1): 9.1/61 kBProgress (1): 10/61 kB Progress (1): 12/61 kBProgress (1): 13/61 kBProgress (1): 14/61 kBProgress (1): 16/61 kBProgress (1): 17/61 kBProgress (1): 18/61 kBProgress (1): 20/61 kBProgress (1): 21/61 kBProgress (1): 23/61 kBProgress (1): 24/61 kBProgress (1): 25/61 kBProgress (1): 27/61 kBProgress (1): 28/61 kBProgress (1): 29/61 kBProgress (1): 31/61 kBProgress (1): 32/61 kBProgress (1): 33/61 kBProgress (1): 35/61 kBProgress (1): 36/61 kBProgress (1): 38/61 kBProgress (1): 39/61 kBProgress (1): 40/61 kBProgress (1): 42/61 kBProgress (1): 43/61 kBProgress (1): 44/61 kBProgress (1): 46/61 kBProgress (1): 47/61 kBProgress (1): 51/61 kBProgress (1): 56/61 kBProgress (1): 60/61 kBProgress (1): 61 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.jar (61 kB at 448 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Progress (1): 4.6 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 223 kB/s)
+Progress (1): 3.1 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 70 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/maven-metadata.xml
+Progress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/maven-metadata.xml (2.3 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/3.5.5/maven-surefire-report-plugin-3.5.5.pom
+Progress (1): 818 BProgress (1): 1.8 kBProgress (1): 6.8 kBProgress (1): 8.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/3.5.5/maven-surefire-report-plugin-3.5.5.pom (8.0 kB at 109 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.5.5/surefire-3.5.5.pom
+Progress (1): 791 BProgress (1): 1.8 kBProgress (1): 3.6 kBProgress (1): 5.7 kBProgress (1): 8.7 kBProgress (1): 12 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 18 kBProgress (1): 19 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.5.5/surefire-3.5.5.pom (19 kB at 253 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/47/maven-parent-47.pom
+Progress (1): 716 BProgress (1): 1.6 kBProgress (1): 4.4 kBProgress (1): 8.4 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 27 kBProgress (1): 28 kBProgress (1): 31 kBProgress (1): 34 kBProgress (1): 38 kBProgress (1): 39 kBProgress (1): 43 kBProgress (1): 45 kBProgress (1): 48 kBProgress (1): 53 kBProgress (1): 54 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/47/maven-parent-47.pom (54 kB at 631 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/37/apache-37.pom
+Progress (1): 733 BProgress (1): 1.6 kBProgress (1): 3.4 kBProgress (1): 5.1 kBProgress (1): 7.1 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 24 kBProgress (1): 26 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/37/apache-37.pom (26 kB at 146 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.pom
+Progress (1): 908 BProgress (1): 2.2 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.12.2/junit-bom-5.12.2.pom (5.6 kB at 83 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/3.5.5/maven-surefire-report-plugin-3.5.5.jar
+Progress (1): 0.9/46 kBProgress (1): 2.3/46 kBProgress (1): 3.6/46 kBProgress (1): 5.0/46 kBProgress (1): 6.4/46 kBProgress (1): 7.7/46 kBProgress (1): 9.1/46 kBProgress (1): 10/46 kB Progress (1): 12/46 kBProgress (1): 13/46 kBProgress (1): 17/46 kBProgress (1): 22/46 kBProgress (1): 26/46 kBProgress (1): 29/46 kBProgress (1): 33/46 kBProgress (1): 37/46 kBProgress (1): 41/46 kBProgress (1): 46/46 kBProgress (1): 46 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-report-plugin/3.5.5/maven-surefire-report-plugin-3.5.5.jar (46 kB at 398 kB/s)
+[INFO] 
+[INFO] ----------------------< org.example:nbank-tests >-----------------------
+[INFO] Building nbank-tests 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> surefire-report:3.5.5:report (default-cli) > [surefire]test @ nbank-tests >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ nbank-tests ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ nbank-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ nbank-tests ---
+[INFO] skip non existing resourceDirectory /app/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ nbank-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ nbank-tests ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] <<< surefire-report:3.5.5:report (default-cli) < [surefire]test @ nbank-tests <<<
+[INFO] 
+[INFO] 
+[INFO] --- surefire-report:3.5.5:report (default-cli) @ nbank-tests ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.5/surefire-logger-api-3.5.5.pom
+Progress (1): 826 BProgress (1): 2.5 kBProgress (1): 3.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.5/surefire-logger-api-3.5.5.pom (3.5 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/3.5.5/surefire-report-parser-3.5.5.pom
+Progress (1): 844 BProgress (1): 2.8 kBProgress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/3.5.5/surefire-report-parser-3.5.5.pom (3.2 kB at 49 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/2.0.0/doxia-sink-api-2.0.0.pom
+Progress (1): 835 BProgress (1): 1.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/2.0.0/doxia-sink-api-2.0.0.pom (1.4 kB at 20 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/2.0.0/doxia-2.0.0.pom
+Progress (1): 754 BProgress (1): 2.2 kBProgress (1): 3.7 kBProgress (1): 8.3 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/2.0.0/doxia-2.0.0.pom (17 kB at 236 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom
+Progress (1): 720 BProgress (1): 1.9 kBProgress (1): 5.5 kBProgress (1): 9.9 kBProgress (1): 14 kB Progress (1): 19 kBProgress (1): 23 kBProgress (1): 25 kBProgress (1): 27 kBProgress (1): 29 kBProgress (1): 32 kBProgress (1): 36 kBProgress (1): 38 kBProgress (1): 42 kBProgress (1): 44 kBProgress (1): 50 kBProgress (1): 50 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom (50 kB at 719 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom
+Progress (1): 741 BProgress (1): 2.1 kBProgress (1): 4.0 kBProgress (1): 6.0 kBProgress (1): 10 kB Progress (1): 16 kBProgress (1): 19 kBProgress (1): 20 kBProgress (1): 23 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom (24 kB at 361 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.1/junit-bom-5.11.1.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.1/junit-bom-5.11.1.pom (5.6 kB at 88 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/2.0.0/doxia-core-2.0.0.pom
+Progress (1): 815 BProgress (1): 3.7 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/2.0.0/doxia-core-2.0.0.pom (3.9 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+Progress (1): 976 BProgress (1): 4.3 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 74 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+Progress (1): 814 BProgress (1): 2.6 kBProgress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 52 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+Progress (1): 692 BProgress (1): 2.5 kBProgress (1): 6.4 kBProgress (1): 8.9 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 26 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 430 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/4.0.0/maven-reporting-impl-4.0.0.pom
+Progress (1): 788 BProgress (1): 2.3 kBProgress (1): 5.8 kBProgress (1): 8.6 kBProgress (1): 8.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/4.0.0/maven-reporting-impl-4.0.0.pom (8.8 kB at 125 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/43/maven-shared-components-43.pom
+Progress (1): 811 BProgress (1): 2.3 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/43/maven-shared-components-43.pom (3.8 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.2/junit-bom-5.11.2.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.2/junit-bom-5.11.2.pom (5.6 kB at 86 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.pom
+Progress (1): 791 BProgress (1): 2.4 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.pom (2.8 kB at 43 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom (5.6 kB at 90 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-model/2.0.0/doxia-site-model-2.0.0.pom
+Progress (1): 789 BProgress (1): 2.7 kBProgress (1): 5.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-model/2.0.0/doxia-site-model-2.0.0.pom (5.8 kB at 90 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/2.0.0/doxia-sitetools-2.0.0.pom
+Progress (1): 758 BProgress (1): 2.2 kBProgress (1): 5.4 kBProgress (1): 8.4 kBProgress (1): 12 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sitetools/2.0.0/doxia-sitetools-2.0.0.pom (12 kB at 181 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M4/org.eclipse.sisu.plexus-0.9.0.M4.pom
+Progress (1): 799 BProgress (1): 3.3 kBProgress (1): 7.6 kBProgress (1): 16 kB Progress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M4/org.eclipse.sisu.plexus-0.9.0.M4.pom (17 kB at 104 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.9.0.M4/sisu-inject-0.9.0.M4.pom
+Progress (1): 781 BProgress (1): 2.7 kBProgress (1): 4.6 kBProgress (1): 7.6 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 22 kBProgress (1): 25 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.9.0.M4/sisu-inject-0.9.0.M4.pom (25 kB at 368 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M4/org.eclipse.sisu.inject-0.9.0.M4.pom
+Progress (1): 805 BProgress (1): 3.7 kBProgress (1): 11 kB Progress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M4/org.eclipse.sisu.inject-0.9.0.M4.pom (18 kB at 245 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom
+Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom (2.4 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-integration-tools/2.0.0/doxia-integration-tools-2.0.0.pom
+Progress (1): 802 BProgress (1): 3.5 kBProgress (1): 7.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-integration-tools/2.0.0/doxia-integration-tools-2.0.0.pom (7.8 kB at 121 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/2.0.0/doxia-site-renderer-2.0.0.pom
+Progress (1): 774 BProgress (1): 2.7 kBProgress (1): 6.9 kBProgress (1): 7.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/2.0.0/doxia-site-renderer-2.0.0.pom (7.4 kB at 38 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/2.0.0/doxia-skin-model-2.0.0.pom
+Progress (1): 797 BProgress (1): 2.3 kBProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/2.0.0/doxia-skin-model-2.0.0.pom (3.0 kB at 39 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/2.0.0/doxia-module-xhtml5-2.0.0.pom
+Progress (1): 818 BProgress (1): 2.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/2.0.0/doxia-module-xhtml5-2.0.0.pom (2.9 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/2.0.0/doxia-modules-2.0.0.pom
+Progress (1): 823 BProgress (1): 2.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-modules/2.0.0/doxia-modules-2.0.0.pom (2.5 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/2.2.0/plexus-velocity-2.2.0.pom
+Progress (1): 808 BProgress (1): 2.4 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/2.2.0/plexus-velocity-2.2.0.pom (4.1 kB at 40 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/19/plexus-19.pom
+Progress (1): 988 BProgress (1): 4.2 kBProgress (1): 7.6 kBProgress (1): 9.4 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 19 kBProgress (1): 24 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/19/plexus-19.pom (25 kB at 338 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.4/velocity-engine-core-2.4.pom
+Progress (1): 801 BProgress (1): 2.2 kBProgress (1): 5.1 kBProgress (1): 9.4 kBProgress (1): 12 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.4/velocity-engine-core-2.4.pom (12 kB at 148 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-parent/2.4/velocity-engine-parent-2.4.pom
+Progress (1): 806 BProgress (1): 2.6 kBProgress (1): 5.1 kBProgress (1): 7.8 kBProgress (1): 9.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-parent/2.4/velocity-engine-parent-2.4.pom (9.5 kB at 142 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-master/7/velocity-master-7.pom
+Progress (1): 812 BProgress (1): 2.2 kBProgress (1): 5.3 kBProgress (1): 7.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-master/7/velocity-master-7.pom (7.9 kB at 113 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.pom
+Progress (1): 862 BProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.pom (2.6 kB at 32 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-parent/3.1/velocity-tools-parent-3.1.pom
+Progress (1): 816 BProgress (1): 2.2 kBProgress (1): 4.5 kBProgress (1): 7.5 kBProgress (1): 8.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-parent/3.1/velocity-tools-parent-3.1.pom (8.0 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-master/4/velocity-master-4.pom
+Progress (1): 808 BProgress (1): 2.5 kBProgress (1): 5.9 kBProgress (1): 7.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-master/4/velocity-master-4.pom (7.8 kB at 106 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.pom
+Progress (1): 1.3 kBProgress (1): 4.5 kBProgress (1): 8.2 kBProgress (1): 10 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.pom (10 kB at 142 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-parent/2.3/velocity-engine-parent-2.3.pom
+Progress (1): 801 BProgress (1): 2.2 kBProgress (1): 6.0 kBProgress (1): 9.4 kBProgress (1): 12 kB Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-parent/2.3/velocity-engine-parent-2.3.pom (14 kB at 206 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.pom
+Progress (1): 764 BProgress (1): 2.1 kBProgress (1): 3.7 kBProgress (1): 7.1 kBProgress (1): 11 kB Progress (1): 13 kBProgress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.pom (18 kB at 243 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.pom
+Progress (1): 765 BProgress (1): 2.1 kBProgress (1): 4.6 kBProgress (1): 6.8 kBProgress (1): 8.6 kBProgress (1): 12 kB Progress (1): 15 kBProgress (1): 17 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.pom (18 kB at 209 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom
+Progress (1): 724 BProgress (1): 1.9 kBProgress (1): 3.4 kBProgress (1): 7.0 kBProgress (1): 9.8 kBProgress (1): 14 kB Progress (1): 17 kBProgress (1): 19 kBProgress (1): 23 kBProgress (1): 30 kBProgress (1): 33 kBProgress (1): 36 kBProgress (1): 38 kBProgress (1): 41 kBProgress (1): 42 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/22/commons-parent-22.pom (42 kB at 173 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom
+Progress (1): 753 BProgress (1): 2.0 kBProgress (1): 3.7 kBProgress (1): 7.1 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/9/apache-9.pom (15 kB at 180 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.pom
+Progress (1): 788 BProgress (1): 2.3 kBProgress (1): 5.8 kBProgress (1): 7.8 kBProgress (1): 11 kB Progress (1): 11 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.pom (11 kB at 165 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/14/commons-parent-14.pom
+Progress (1): 730 BProgress (1): 1.9 kBProgress (1): 4.1 kBProgress (1): 8.3 kBProgress (1): 12 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 27 kBProgress (1): 30 kBProgress (1): 31 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/14/commons-parent-14.pom (31 kB at 327 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Progress (1): 783 BProgress (1): 2.0 kBProgress (1): 5.0 kBProgress (1): 6.8 kBProgress (1): 10 kB Progress (1): 13 kBProgress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (18 kB at 189 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+Progress (1): 782 BProgress (1): 2.1 kBProgress (1): 4.7 kBProgress (1): 8.4 kBProgress (1): 12 kB Progress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom (16 kB at 83 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.pom
+Progress (1): 1.0 kBProgress (1): 3.1 kBProgress (1): 6.8 kBProgress (1): 7.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.pom (7.5 kB at 30 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/2.0.0/doxia-module-apt-2.0.0.pom
+Progress (1): 819 BProgress (1): 2.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/2.0.0/doxia-module-apt-2.0.0.pom (2.9 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/2.0.0/doxia-module-xdoc-2.0.0.pom
+Progress (1): 779 BProgress (1): 3.1 kBProgress (1): 5.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/2.0.0/doxia-module-xdoc-2.0.0.pom (5.4 kB at 64 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.pom
+Progress (1): 750 BProgress (1): 1.9 kBProgress (1): 3.7 kBProgress (1): 5.3 kBProgress (1): 9.1 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 17 kBProgress (1): 22 kBProgress (1): 25 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.pom (25 kB at 63 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.pom
+Progress (1): 739 BProgress (1): 1.9 kBProgress (1): 4.0 kBProgress (1): 5.7 kBProgress (1): 8.2 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 17 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.pom (18 kB at 106 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.1.0/plexus-i18n-1.1.0.pom
+Progress (1): 1.2 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.1.0/plexus-i18n-1.1.0.pom (2.8 kB at 23 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/24/plexus-24.pom
+Progress (1): 689 BProgress (1): 2.5 kBProgress (1): 6.4 kBProgress (1): 8.8 kBProgress (1): 11 kB Progress (1): 12 kBProgress (1): 16 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 28 kBProgress (1): 31 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/24/plexus-24.pom (31 kB at 392 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.29/plexus-interpolation-1.29.pom
+Progress (1): 1.3 kBProgress (1): 3.1 kBProgress (1): 4.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.29/plexus-interpolation-1.29.pom (4.7 kB at 61 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.5/surefire-logger-api-3.5.5.jar
+Progress (1): 7.7/14 kBProgress (1): 14 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.5/surefire-logger-api-3.5.5.jar (14 kB at 141 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/3.5.5/surefire-report-parser-3.5.5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/2.0.0/doxia-sink-api-2.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/2.0.0/doxia-core-2.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/4.0.0/maven-reporting-impl-4.0.0.jar
+Progress (1): 3.8/11 kBProgress (2): 3.8/11 kB | 7.7/22 kBProgress (2): 3.8/11 kB | 12/22 kB Progress (2): 8.0/11 kB | 12/22 kBProgress (2): 11 kB | 12/22 kB                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/2.0.0/doxia-sink-api-2.0.0.jar (11 kB at 145 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.jar
+Progress (2): 12/22 kB | 3.8/9.8 kBProgress (2): 12/22 kB | 8.0/9.8 kBProgress (2): 12/22 kB | 9.8 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.jar (9.8 kB at 69 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-model/2.0.0/doxia-site-model-2.0.0.jar
+Progress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/3.5.5/surefire-report-parser-3.5.5.jar (22 kB at 118 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-integration-tools/2.0.0/doxia-integration-tools-2.0.0.jar
+Progress (1): 3.8/86 kBProgress (1): 8.0/86 kBProgress (1): 8.2/86 kBProgress (1): 12/86 kB Progress (1): 17/86 kBProgress (1): 21/86 kBProgress (1): 25/86 kBProgress (1): 29/86 kBProgress (1): 34/86 kBProgress (1): 38/86 kBProgress (2): 38/86 kB | 0.9/193 kBProgress (2): 38/86 kB | 2.3/193 kBProgress (2): 38/86 kB | 3.6/193 kBProgress (2): 38/86 kB | 5.0/193 kBProgress (2): 38/86 kB | 6.4/193 kBProgress (2): 38/86 kB | 7.7/193 kBProgress (2): 38/86 kB | 9.1/193 kBProgress (2): 38/86 kB | 10/193 kB Progress (2): 42/86 kB | 10/193 kBProgress (2): 46/86 kB | 10/193 kBProgress (2): 50/86 kB | 10/193 kBProgress (2): 50/86 kB | 12/193 kBProgress (2): 50/86 kB | 13/193 kBProgress (3): 50/86 kB | 13/193 kB | 0.9/168 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 0.9/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 2.3/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 3.6/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 5.0/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 6.4/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 7.7/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 9.1/21 kBProgress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 10/21 kB Progress (4): 50/86 kB | 13/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 50/86 kB | 15/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 50/86 kB | 16/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 50/86 kB | 16/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 55/86 kB | 16/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 59/86 kB | 16/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 63/86 kB | 16/193 kB | 0.9/168 kB | 12/21 kBProgress (4): 63/86 kB | 16/193 kB | 2.3/168 kB | 12/21 kBProgress (4): 63/86 kB | 16/193 kB | 2.3/168 kB | 13/21 kBProgress (4): 63/86 kB | 16/193 kB | 2.3/168 kB | 14/21 kBProgress (4): 67/86 kB | 16/193 kB | 2.3/168 kB | 14/21 kBProgress (5): 67/86 kB | 16/193 kB | 2.3/168 kB | 14/21 kB | 7.7/50 kBProgress (5): 67/86 kB | 16/193 kB | 2.3/168 kB | 14/21 kB | 16/50 kB Progress (5): 67/86 kB | 16/193 kB | 3.6/168 kB | 14/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 3.6/168 kB | 16/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 3.6/168 kB | 17/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 5.0/168 kB | 17/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 6.4/168 kB | 17/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 6.4/168 kB | 18/21 kB | 16/50 kBProgress (5): 67/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 16/50 kBProgress (5): 72/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 16/50 kBProgress (5): 76/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 16/50 kBProgress (5): 76/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 32/50 kBProgress (5): 80/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 32/50 kBProgress (5): 84/86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 7.7/168 kB | 18/21 kB | 32/50 kB   Progress (5): 86 kB | 16/193 kB | 9.1/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 10/168 kB | 18/21 kB | 32/50 kB Progress (5): 86 kB | 16/193 kB | 12/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 12/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 14/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 15/168 kB | 18/21 kB | 32/50 kBProgress (5): 86 kB | 16/193 kB | 16/168 kB | 18/21 kB | 32/50 kB                                                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-model/2.0.0/doxia-site-model-2.0.0.jar (86 kB at 317 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/2.0.0/doxia-site-renderer-2.0.0.jar
+Progress (4): 16/193 kB | 18/168 kB | 18/21 kB | 32/50 kBProgress (4): 16/193 kB | 19/168 kB | 18/21 kB | 32/50 kBProgress (4): 16/193 kB | 19/168 kB | 18/21 kB | 48/50 kBProgress (4): 16/193 kB | 19/168 kB | 18/21 kB | 50 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-integration-tools/2.0.0/doxia-integration-tools-2.0.0.jar (50 kB at 185 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/2.0.0/doxia-skin-model-2.0.0.jar
+Progress (3): 16/193 kB | 21/168 kB | 18/21 kBProgress (3): 16/193 kB | 22/168 kB | 18/21 kBProgress (3): 16/193 kB | 23/168 kB | 18/21 kBProgress (3): 16/193 kB | 25/168 kB | 18/21 kBProgress (3): 16/193 kB | 26/168 kB | 18/21 kBProgress (3): 16/193 kB | 26/168 kB | 20/21 kBProgress (3): 18/193 kB | 26/168 kB | 20/21 kBProgress (3): 18/193 kB | 26/168 kB | 21 kB   Progress (3): 19/193 kB | 26/168 kB | 21 kBProgress (3): 20/193 kB | 26/168 kB | 21 kBProgress (3): 22/193 kB | 26/168 kB | 21 kBProgress (3): 23/193 kB | 26/168 kB | 21 kBProgress (3): 25/193 kB | 26/168 kB | 21 kBProgress (3): 26/193 kB | 26/168 kB | 21 kBProgress (3): 27/193 kB | 26/168 kB | 21 kBProgress (3): 29/193 kB | 26/168 kB | 21 kBProgress (3): 29/193 kB | 27/168 kB | 21 kBProgress (3): 29/193 kB | 29/168 kB | 21 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/4.0.0/maven-reporting-impl-4.0.0.jar (21 kB at 70 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/2.0.0/doxia-module-xhtml5-2.0.0.jar
+Progress (2): 29/193 kB | 30/168 kBProgress (2): 29/193 kB | 31/168 kBProgress (2): 30/193 kB | 31/168 kBProgress (2): 31/193 kB | 31/168 kBProgress (2): 31/193 kB | 33/168 kBProgress (2): 31/193 kB | 34/168 kBProgress (2): 33/193 kB | 34/168 kBProgress (2): 34/193 kB | 34/168 kBProgress (2): 34/193 kB | 36/168 kBProgress (2): 34/193 kB | 37/168 kBProgress (2): 36/193 kB | 37/168 kBProgress (2): 37/193 kB | 37/168 kBProgress (2): 37/193 kB | 38/168 kBProgress (2): 37/193 kB | 40/168 kBProgress (2): 38/193 kB | 40/168 kBProgress (2): 40/193 kB | 40/168 kBProgress (2): 40/193 kB | 41/168 kBProgress (2): 40/193 kB | 42/168 kBProgress (2): 40/193 kB | 44/168 kBProgress (2): 40/193 kB | 45/168 kBProgress (2): 41/193 kB | 45/168 kBProgress (2): 42/193 kB | 45/168 kBProgress (2): 42/193 kB | 47/168 kBProgress (2): 44/193 kB | 47/168 kBProgress (2): 44/193 kB | 48/168 kBProgress (2): 45/193 kB | 48/168 kBProgress (2): 45/193 kB | 49/168 kBProgress (2): 47/193 kB | 49/168 kBProgress (2): 47/193 kB | 51/168 kBProgress (2): 47/193 kB | 52/168 kBProgress (2): 48/193 kB | 52/168 kBProgress (2): 49/193 kB | 52/168 kBProgress (2): 51/193 kB | 52/168 kBProgress (2): 51/193 kB | 53/168 kBProgress (2): 52/193 kB | 53/168 kBProgress (2): 52/193 kB | 55/168 kBProgress (2): 53/193 kB | 55/168 kBProgress (2): 55/193 kB | 55/168 kBProgress (2): 55/193 kB | 59/168 kBProgress (2): 55/193 kB | 63/168 kBProgress (3): 55/193 kB | 63/168 kB | 3.8/44 kBProgress (3): 55/193 kB | 63/168 kB | 8.0/44 kBProgress (3): 59/193 kB | 63/168 kB | 8.0/44 kBProgress (3): 63/193 kB | 63/168 kB | 8.0/44 kBProgress (3): 63/193 kB | 66/168 kB | 8.0/44 kBProgress (4): 63/193 kB | 66/168 kB | 8.0/44 kB | 7.7/16 kBProgress (4): 63/193 kB | 66/168 kB | 8.0/44 kB | 16/16 kB Progress (4): 63/193 kB | 66/168 kB | 8.0/44 kB | 16 kB   Progress (4): 63/193 kB | 66/168 kB | 12/44 kB | 16 kB Progress (4): 63/193 kB | 66/168 kB | 16/44 kB | 16 kBProgress (4): 63/193 kB | 66/168 kB | 21/44 kB | 16 kB                                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-skin-model/2.0.0/doxia-skin-model-2.0.0.jar (16 kB at 40 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/2.2.0/plexus-velocity-2.2.0.jar
+Progress (3): 63/193 kB | 66/168 kB | 25/44 kBProgress (3): 67/193 kB | 66/168 kB | 25/44 kBProgress (3): 72/193 kB | 66/168 kB | 25/44 kBProgress (3): 76/193 kB | 66/168 kB | 25/44 kBProgress (3): 80/193 kB | 66/168 kB | 25/44 kBProgress (3): 82/193 kB | 66/168 kB | 25/44 kBProgress (4): 82/193 kB | 66/168 kB | 25/44 kB | 0.9/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 0.9/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 2.3/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 3.6/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 5.0/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 6.4/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 7.7/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 9.1/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 10/17 kB Progress (4): 86/193 kB | 66/168 kB | 25/44 kB | 12/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 13/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 15/17 kBProgress (4): 86/193 kB | 66/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 70/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 74/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 78/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 82/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 87/168 kB | 25/44 kB | 16/17 kBProgress (4): 86/193 kB | 87/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 91/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 95/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 99/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 104/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 108/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 112/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 115/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 119/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 123/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 127/168 kB | 32/44 kB | 16/17 kBProgress (4): 86/193 kB | 127/168 kB | 44 kB | 16/17 kB   Progress (4): 90/193 kB | 127/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 132/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 136/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 140/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 144/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 149/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 153/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 157/168 kB | 44 kB | 16/17 kBProgress (4): 90/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 95/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 99/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 103/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 107/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 112/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 116/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 120/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 124/193 kB | 161/168 kB | 44 kB | 16/17 kBProgress (4): 124/193 kB | 165/168 kB | 44 kB | 16/17 kBProgress (4): 128/193 kB | 165/168 kB | 44 kB | 16/17 kBProgress (4): 131/193 kB | 165/168 kB | 44 kB | 16/17 kBProgress (4): 135/193 kB | 165/168 kB | 44 kB | 16/17 kBProgress (4): 140/193 kB | 165/168 kB | 44 kB | 16/17 kBProgress (4): 144/193 kB | 165/168 kB | 44 kB | 16/17 kB                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/2.0.0/doxia-site-renderer-2.0.0.jar (44 kB at 102 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.4/velocity-engine-core-2.4.jar
+Progress (3): 148/193 kB | 165/168 kB | 16/17 kBProgress (3): 152/193 kB | 165/168 kB | 16/17 kBProgress (3): 156/193 kB | 165/168 kB | 16/17 kBProgress (3): 161/193 kB | 165/168 kB | 16/17 kBProgress (3): 165/193 kB | 165/168 kB | 16/17 kBProgress (3): 168/193 kB | 165/168 kB | 16/17 kBProgress (3): 172/193 kB | 165/168 kB | 16/17 kBProgress (3): 176/193 kB | 165/168 kB | 16/17 kBProgress (3): 180/193 kB | 165/168 kB | 16/17 kBProgress (3): 185/193 kB | 165/168 kB | 16/17 kBProgress (3): 189/193 kB | 165/168 kB | 16/17 kBProgress (3): 193 kB | 165/168 kB | 16/17 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 446 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.jar
+Progress (2): 165/168 kB | 17 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xhtml5/2.0.0/doxia-module-xhtml5-2.0.0.jar (17 kB at 37 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar
+Progress (2): 165/168 kB | 3.8/217 kBProgress (2): 165/168 kB | 4.1/217 kBProgress (2): 165/168 kB | 8.3/217 kBProgress (2): 165/168 kB | 13/217 kB Progress (2): 165/168 kB | 17/217 kBProgress (2): 165/168 kB | 21/217 kBProgress (2): 165/168 kB | 37/217 kBProgress (3): 165/168 kB | 37/217 kB | 7.7/510 kBProgress (3): 165/168 kB | 37/217 kB | 16/510 kB Progress (3): 168 kB | 37/217 kB | 16/510 kB                                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/2.0.0/doxia-core-2.0.0.jar (168 kB at 342 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.jar
+Progress (2): 54/217 kB | 16/510 kBProgress (2): 54/217 kB | 32/510 kBProgress (2): 70/217 kB | 32/510 kBProgress (2): 70/217 kB | 49/510 kBProgress (2): 87/217 kB | 49/510 kBProgress (2): 103/217 kB | 49/510 kBProgress (2): 103/217 kB | 65/510 kBProgress (2): 119/217 kB | 65/510 kBProgress (2): 127/217 kB | 65/510 kBProgress (2): 143/217 kB | 65/510 kBProgress (2): 143/217 kB | 81/510 kBProgress (2): 160/217 kB | 81/510 kBProgress (2): 160/217 kB | 98/510 kBProgress (2): 176/217 kB | 98/510 kBProgress (2): 193/217 kB | 98/510 kBProgress (2): 193/217 kB | 114/510 kBProgress (2): 209/217 kB | 114/510 kBProgress (2): 209/217 kB | 122/510 kBProgress (2): 209/217 kB | 139/510 kBProgress (2): 217 kB | 139/510 kB    Progress (3): 217 kB | 139/510 kB | 0.9/247 kBProgress (3): 217 kB | 139/510 kB | 2.3/247 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/tools/velocity-tools-generic/3.1/velocity-tools-generic-3.1.jar (217 kB at 413 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.jar
+Progress (2): 139/510 kB | 3.6/247 kBProgress (2): 155/510 kB | 3.6/247 kBProgress (2): 155/510 kB | 5.0/247 kBProgress (2): 155/510 kB | 6.4/247 kBProgress (2): 155/510 kB | 7.7/247 kBProgress (2): 155/510 kB | 9.1/247 kBProgress (2): 155/510 kB | 10/247 kB Progress (2): 172/510 kB | 10/247 kBProgress (2): 172/510 kB | 12/247 kBProgress (2): 172/510 kB | 13/247 kBProgress (2): 172/510 kB | 14/247 kBProgress (2): 172/510 kB | 16/247 kBProgress (2): 188/510 kB | 16/247 kBProgress (2): 188/510 kB | 20/247 kBProgress (2): 204/510 kB | 20/247 kBProgress (2): 204/510 kB | 24/247 kBProgress (3): 204/510 kB | 24/247 kB | 3.8/242 kBProgress (3): 204/510 kB | 24/247 kB | 8.0/242 kBProgress (3): 204/510 kB | 24/247 kB | 12/242 kB Progress (3): 204/510 kB | 24/247 kB | 16/242 kBProgress (3): 204/510 kB | 24/247 kB | 21/242 kBProgress (3): 204/510 kB | 24/247 kB | 25/242 kBProgress (3): 221/510 kB | 24/247 kB | 25/242 kBProgress (3): 221/510 kB | 28/247 kB | 25/242 kBProgress (3): 221/510 kB | 28/247 kB | 29/242 kBProgress (3): 221/510 kB | 28/247 kB | 33/242 kBProgress (3): 221/510 kB | 28/247 kB | 37/242 kBProgress (3): 221/510 kB | 33/247 kB | 37/242 kBProgress (3): 221/510 kB | 33/247 kB | 41/242 kBProgress (3): 221/510 kB | 33/247 kB | 46/242 kBProgress (3): 221/510 kB | 33/247 kB | 50/242 kBProgress (3): 237/510 kB | 33/247 kB | 50/242 kBProgress (3): 237/510 kB | 37/247 kB | 50/242 kBProgress (3): 237/510 kB | 37/247 kB | 66/242 kBProgress (3): 253/510 kB | 37/247 kB | 66/242 kBProgress (3): 253/510 kB | 41/247 kB | 66/242 kBProgress (3): 253/510 kB | 41/247 kB | 83/242 kBProgress (3): 270/510 kB | 41/247 kB | 83/242 kBProgress (3): 270/510 kB | 45/247 kB | 83/242 kBProgress (3): 270/510 kB | 45/247 kB | 99/242 kBProgress (3): 270/510 kB | 49/247 kB | 99/242 kBProgress (3): 286/510 kB | 49/247 kB | 99/242 kBProgress (3): 286/510 kB | 49/247 kB | 115/242 kBProgress (3): 303/510 kB | 49/247 kB | 115/242 kBProgress (3): 303/510 kB | 54/247 kB | 115/242 kBProgress (3): 319/510 kB | 54/247 kB | 115/242 kBProgress (3): 335/510 kB | 54/247 kB | 115/242 kBProgress (3): 335/510 kB | 54/247 kB | 132/242 kBProgress (3): 335/510 kB | 54/247 kB | 148/242 kBProgress (3): 352/510 kB | 54/247 kB | 148/242 kBProgress (3): 352/510 kB | 58/247 kB | 148/242 kBProgress (3): 352/510 kB | 58/247 kB | 156/242 kBProgress (3): 352/510 kB | 62/247 kB | 156/242 kBProgress (3): 368/510 kB | 62/247 kB | 156/242 kBProgress (3): 384/510 kB | 62/247 kB | 156/242 kBProgress (3): 384/510 kB | 62/247 kB | 172/242 kBProgress (3): 384/510 kB | 62/247 kB | 188/242 kBProgress (3): 401/510 kB | 62/247 kB | 188/242 kBProgress (3): 401/510 kB | 66/247 kB | 188/242 kBProgress (3): 417/510 kB | 66/247 kB | 188/242 kBProgress (3): 434/510 kB | 66/247 kB | 188/242 kBProgress (3): 434/510 kB | 71/247 kB | 188/242 kBProgress (3): 450/510 kB | 71/247 kB | 188/242 kBProgress (3): 450/510 kB | 75/247 kB | 188/242 kBProgress (3): 466/510 kB | 75/247 kB | 188/242 kBProgress (4): 466/510 kB | 75/247 kB | 188/242 kB | 7.7/35 kBProgress (4): 466/510 kB | 75/247 kB | 188/242 kB | 16/35 kB Progress (4): 466/510 kB | 75/247 kB | 188/242 kB | 24/35 kBProgress (4): 483/510 kB | 75/247 kB | 188/242 kB | 24/35 kBProgress (4): 483/510 kB | 75/247 kB | 188/242 kB | 35 kB   Progress (4): 483/510 kB | 75/247 kB | 205/242 kB | 35 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/com/github/cliftonlabs/json-simple/3.0.2/json-simple-3.0.2.jar (35 kB at 58 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/2.0.0/doxia-module-apt-2.0.0.jar
+Progress (3): 483/510 kB | 79/247 kB | 205/242 kBProgress (3): 483/510 kB | 83/247 kB | 205/242 kBProgress (3): 499/510 kB | 83/247 kB | 205/242 kBProgress (3): 499/510 kB | 88/247 kB | 205/242 kBProgress (3): 510 kB | 88/247 kB | 205/242 kB    Progress (3): 510 kB | 92/247 kB | 205/242 kBProgress (3): 510 kB | 92/247 kB | 221/242 kBProgress (3): 510 kB | 92/247 kB | 238/242 kBProgress (3): 510 kB | 92/247 kB | 242 kB    Progress (3): 510 kB | 96/247 kB | 242 kB                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocity/velocity-engine-core/2.4/velocity-engine-core-2.4.jar (510 kB at 836 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/2.0.0/doxia-module-xdoc-2.0.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-digester3/3.2/commons-digester3-3.2.jar (242 kB at 395 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar
+Progress (1): 100/247 kBProgress (1): 104/247 kBProgress (1): 109/247 kBProgress (1): 113/247 kBProgress (1): 117/247 kBProgress (1): 121/247 kBProgress (1): 126/247 kBProgress (1): 130/247 kBProgress (1): 134/247 kBProgress (1): 138/247 kBProgress (1): 143/247 kBProgress (1): 143/247 kBProgress (1): 147/247 kBProgress (1): 151/247 kBProgress (1): 155/247 kBProgress (1): 160/247 kBProgress (1): 164/247 kBProgress (1): 168/247 kBProgress (1): 172/247 kBProgress (1): 176/247 kBProgress (1): 181/247 kBProgress (1): 197/247 kBProgress (1): 213/247 kBProgress (1): 230/247 kBProgress (1): 246/247 kBProgress (1): 247 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar (247 kB at 375 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M4/org.eclipse.sisu.plexus-0.9.0.M4.jar
+Progress (1): 3.4/35 kBProgress (1): 20/35 kB Progress (2): 20/35 kB | 0/1.1 MBProgress (2): 20/35 kB | 0/1.1 MBProgress (2): 20/35 kB | 0/1.1 MBProgress (2): 20/35 kB | 0/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.1/1.1 MBProgress (2): 20/35 kB | 0.2/1.1 MBProgress (2): 20/35 kB | 0.2/1.1 MBProgress (2): 20/35 kB | 0.2/1.1 MBProgress (2): 20/35 kB | 0.2/1.1 MBProgress (2): 20/35 kB | 0.2/1.1 MBProgress (3): 20/35 kB | 0.2/1.1 MB | 7.7/54 kBProgress (3): 20/35 kB | 0.2/1.1 MB | 12/54 kB Progress (3): 20/35 kB | 0.2/1.1 MB | 29/54 kBProgress (3): 35 kB | 0.2/1.1 MB | 29/54 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-xdoc/2.0.0/doxia-module-xdoc-2.0.0.jar (35 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M4/org.eclipse.sisu.inject-0.9.0.M4.jar
+Progress (2): 0.2/1.1 MB | 29/54 kBProgress (2): 0.2/1.1 MB | 29/54 kBProgress (2): 0.2/1.1 MB | 45/54 kBProgress (2): 0.2/1.1 MB | 49/54 kBProgress (2): 0.3/1.1 MB | 49/54 kBProgress (2): 0.3/1.1 MB | 54 kB   Progress (2): 0.3/1.1 MB | 54 kBProgress (2): 0.3/1.1 MB | 54 kBProgress (2): 0.3/1.1 MB | 54 kBProgress (2): 0.3/1.1 MB | 54 kBProgress (3): 0.3/1.1 MB | 54 kB | 7.7/216 kBProgress (3): 0.3/1.1 MB | 54 kB | 16/216 kB Progress (3): 0.3/1.1 MB | 54 kB | 16/216 kBProgress (3): 0.3/1.1 MB | 54 kB | 32/216 kBProgress (3): 0.3/1.1 MB | 54 kB | 48/216 kBProgress (3): 0.4/1.1 MB | 54 kB | 48/216 kBProgress (3): 0.4/1.1 MB | 54 kB | 65/216 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-module-apt/2.0.0/doxia-module-apt-2.0.0.jar (54 kB at 71 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar
+Progress (2): 0.4/1.1 MB | 81/216 kBProgress (2): 0.4/1.1 MB | 81/216 kBProgress (2): 0.4/1.1 MB | 98/216 kBProgress (2): 0.4/1.1 MB | 114/216 kBProgress (2): 0.4/1.1 MB | 130/216 kBProgress (2): 0.4/1.1 MB | 130/216 kBProgress (2): 0.4/1.1 MB | 147/216 kBProgress (2): 0.4/1.1 MB | 163/216 kBProgress (2): 0.4/1.1 MB | 163/216 kBProgress (2): 0.4/1.1 MB | 163/216 kBProgress (2): 0.4/1.1 MB | 179/216 kBProgress (2): 0.4/1.1 MB | 196/216 kBProgress (2): 0.4/1.1 MB | 196/216 kBProgress (2): 0.4/1.1 MB | 212/216 kBProgress (2): 0.4/1.1 MB | 216 kB    Progress (2): 0.5/1.1 MB | 216 kBProgress (2): 0.5/1.1 MB | 216 kBProgress (2): 0.5/1.1 MB | 216 kBProgress (2): 0.5/1.1 MB | 216 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M4/org.eclipse.sisu.plexus-0.9.0.M4.jar (216 kB at 285 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar
+Progress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.5/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.6/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.7/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.8/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (1): 0.9/1.1 MBProgress (2): 0.9/1.1 MB | 7.7/305 kBProgress (2): 0.9/1.1 MB | 8.2/305 kBProgress (2): 1.0/1.1 MB | 8.2/305 kBProgress (2): 1.0/1.1 MB | 8.2/305 kBProgress (2): 1.0/1.1 MB | 25/305 kB Progress (2): 1.0/1.1 MB | 25/305 kBProgress (2): 1.0/1.1 MB | 41/305 kBProgress (2): 1.0/1.1 MB | 57/305 kBProgress (2): 1.0/1.1 MB | 74/305 kBProgress (2): 1.0/1.1 MB | 90/305 kBProgress (2): 1.0/1.1 MB | 106/305 kBProgress (2): 1.0/1.1 MB | 123/305 kBProgress (2): 1.0/1.1 MB | 139/305 kBProgress (2): 1.0/1.1 MB | 156/305 kBProgress (2): 1.0/1.1 MB | 172/305 kBProgress (2): 1.0/1.1 MB | 188/305 kBProgress (2): 1.0/1.1 MB | 205/305 kBProgress (2): 1.0/1.1 MB | 221/305 kBProgress (2): 1.0/1.1 MB | 238/305 kBProgress (2): 1.0/1.1 MB | 254/305 kBProgress (2): 1.0/1.1 MB | 270/305 kBProgress (2): 1.0/1.1 MB | 287/305 kBProgress (3): 1.0/1.1 MB | 287/305 kB | 7.7/126 kBProgress (3): 1.0/1.1 MB | 287/305 kB | 16/126 kB Progress (3): 1.0/1.1 MB | 303/305 kB | 16/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 32/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 49/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 65/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 81/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 98/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 114/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 114/126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 126 kB    Progress (3): 1.0/1.1 MB | 303/305 kB | 126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 126 kBProgress (3): 1.0/1.1 MB | 303/305 kB | 126 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar (126 kB at 153 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar
+Progress (2): 1.1/1.1 MB | 303/305 kBProgress (2): 1.1/1.1 MB | 303/305 kBProgress (2): 1.1/1.1 MB | 303/305 kBProgress (2): 1.1/1.1 MB | 303/305 kBProgress (2): 1.1 MB | 303/305 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar (1.1 MB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+Progress (2): 303/305 kB | 7.7/53 kBProgress (2): 303/305 kB | 16/53 kB Progress (2): 303/305 kB | 24/53 kBProgress (2): 303/305 kB | 40/53 kBProgress (2): 303/305 kB | 53 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar (53 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.1.0/plexus-i18n-1.1.0.jar
+Progress (2): 303/305 kB | 7.7/94 kBProgress (2): 303/305 kB | 16/94 kB Progress (2): 303/305 kB | 32/94 kBProgress (2): 303/305 kB | 49/94 kBProgress (2): 303/305 kB | 61/94 kBProgress (2): 303/305 kB | 78/94 kBProgress (2): 303/305 kB | 94/94 kBProgress (2): 303/305 kB | 94 kB                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 105 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.29/plexus-interpolation-1.29.jar
+Progress (1): 305 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M4/org.eclipse.sisu.inject-0.9.0.M4.jar (305 kB at 335 kB/s)
+Progress (1): 4.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar (4.2 kB at 4.6 kB/s)
+Progress (1): 7.4/10 kBProgress (2): 7.4/10 kB | 7.7/88 kBProgress (2): 7.4/10 kB | 16/88 kB Progress (2): 7.4/10 kB | 32/88 kBProgress (2): 7.4/10 kB | 48/88 kBProgress (2): 7.4/10 kB | 65/88 kBProgress (2): 7.4/10 kB | 81/88 kBProgress (2): 7.4/10 kB | 88 kB                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.29/plexus-interpolation-1.29.jar (88 kB at 91 kB/s)
+Progress (1): 10 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.1.0/plexus-i18n-1.1.0.jar (10 kB at 9.6 kB/s)
+Progress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/2.2.0/plexus-velocity-2.2.0.jar (5.7 kB at 3.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/skins/maven-fluido-skin/2.0.0-M9/maven-fluido-skin-2.0.0-M9.jar
+Progress (1): 7.5/355 kBProgress (1): 24/355 kB Progress (1): 40/355 kBProgress (1): 57/355 kBProgress (1): 73/355 kBProgress (1): 89/355 kBProgress (1): 106/355 kBProgress (1): 122/355 kBProgress (1): 139/355 kBProgress (1): 155/355 kBProgress (1): 171/355 kBProgress (1): 188/355 kBProgress (1): 204/355 kBProgress (1): 220/355 kBProgress (1): 237/355 kBProgress (1): 253/355 kBProgress (1): 270/355 kBProgress (1): 286/355 kBProgress (1): 302/355 kBProgress (1): 319/355 kBProgress (1): 335/355 kBProgress (1): 352/355 kBProgress (1): 355 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/skins/maven-fluido-skin/2.0.0-M9/maven-fluido-skin-2.0.0-M9.jar (355 kB at 2.0 MB/s)
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[WARNING] Unable to locate Test Source XRef to link to -- DISABLED
+[INFO] MBTP: Session Ended
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.039 s
+[INFO] Finished at: 2026-04-20T22:17:47Z
+[INFO] ------------------------------------------------------------------------
+[INFO] --             Maven Build Time Profiler Summary                      --
+[INFO] ------------------------------------------------------------------------
+[INFO] Project discovery time:       20 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] Project Build Time (reactor order):
+[INFO] 
+[INFO] nbank-tests:
+[INFO]          151 ms : process-resources
+[INFO]           92 ms : compile
+[INFO]            4 ms : process-test-resources
+[INFO]            7 ms : test-compile
+[INFO]          174 ms : test
+[INFO] ------------------------------------------------------------------------
+[INFO] Lifecycle Phase summary:
+[INFO] 
+[INFO]      151 ms : process-resources
+[INFO]       92 ms : compile
+[INFO]        4 ms : process-test-resources
+[INFO]        7 ms : test-compile
+[INFO]      174 ms : test
+[INFO] ------------------------------------------------------------------------
+[INFO] Plugins in lifecycle Phases:
+[INFO] 
+[INFO] process-resources:
+[INFO]      151 ms: org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[INFO] compile:
+[INFO]       92 ms: org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile)
+[INFO] process-test-resources:
+[INFO]        4 ms: org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[INFO] test-compile:
+[INFO]        7 ms: org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile)
+[INFO] test:
+[INFO]      174 ms: org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test)
+[INFO] 
+[INFO]      428 ms plugins execution summary.
+[INFO] ------------------------------------------------------------------------
+[INFO] Plugins directly called via goals:
+[INFO] 
+[INFO]     8942 ms : org.apache.maven.plugins:maven-surefire-report-plugin:3.5.5:report (default-cli)
+[INFO] ------------------------------------------------------------------------
+[INFO] Artifact Download summary:
+[INFO]     1592 ms : org.apache.commons:commons-digester3:3.2:jar (241,614 bytes)
+[INFO]       74 ms : org.codehaus.plexus:plexus-xml:3.0.1:pom (3,694 bytes)
+[INFO]       68 ms : org.apache.maven.surefire:surefire-report-parser:3.5.5:pom (3,231 bytes)
+[INFO]       77 ms : org.apache.maven.plugins:maven-surefire-report-plugin:3.5.5:pom (8,036 bytes)
+[INFO]      415 ms : org.apache.commons:commons-compress:1.28.0:pom (25,308 bytes)
+[INFO]     1583 ms : org.apache.maven.reporting:maven-reporting-impl:4.0.0:jar (20,961 bytes)
+[INFO]       72 ms : commons-beanutils:commons-beanutils:1.8.3:pom (11,198 bytes)
+[INFO]      168 ms : org.eclipse.sisu:org.eclipse.sisu.plexus:0.9.0.M4:pom (17,364 bytes)
+[INFO]       82 ms : org.codehaus.plexus:plexus-interpolation:1.29:pom (4,721 bytes)
+[INFO]       82 ms : org.apache.maven.doxia:doxia-skin-model:2.0.0:pom (3,020 bytes)
+[INFO]       64 ms : org.junit:junit-bom:5.10.3:pom (5,649 bytes)
+[INFO]      887 ms : org.apache.maven.plugins:maven-release-plugin:3.0.1:pom (9,827 bytes)
+[INFO]     1588 ms : org.apache.maven.doxia:doxia-site-renderer:2.0.0:jar (43,622 bytes)
+[INFO]     1591 ms : org.apache.velocity:velocity-engine-core:2.4:jar (510,500 bytes)
+[INFO]       75 ms : org.apache.maven.doxia:doxia:2.0.0:pom (17,220 bytes)
+[INFO]       69 ms : org.apache.velocity:velocity-engine-parent:2.4:pom (9,504 bytes)
+[INFO]     1599 ms : org.codehaus.plexus:plexus-component-annotations:2.1.0:jar (4,225 bytes)
+[INFO]     1581 ms : org.apache.maven.doxia:doxia-core:2.0.0:jar (168,106 bytes)
+[INFO]       84 ms : org.apache.maven.doxia:doxia-module-apt:2.0.0:pom (2,861 bytes)
+[INFO]      121 ms : org.codehaus.plexus:plexus-velocity:2.2.0:pom (4,055 bytes)
+[INFO]       68 ms : org.apache.maven.doxia:doxia-sitetools:2.0.0:pom (11,966 bytes)
+[INFO]     1592 ms : commons-beanutils:commons-beanutils:1.9.4:jar (246,918 bytes)
+[INFO]       70 ms : org.ow2.asm:asm:9.8:pom (2,370 bytes)
+[INFO]      100 ms : commons-logging:commons-logging:1.1.1:pom (18,365 bytes)
+[INFO]       66 ms : org.junit:junit-bom:5.11.1:pom (5,649 bytes)
+[INFO]      171 ms : org.apache.velocity.tools:velocity-tools-parent:3.1:pom (8,015 bytes)
+[INFO]     1593 ms : com.github.cliftonlabs:json-simple:3.0.2:jar (35,059 bytes)
+[INFO]     1592 ms : org.apache.velocity.tools:velocity-tools-generic:3.1:jar (216,933 bytes)
+[INFO]      128 ms : org.codehaus.plexus:plexus-i18n:1.1.0:pom (2,770 bytes)
+[INFO]       77 ms : org.apache.maven.surefire:surefire:3.5.5:pom (19,204 bytes)
+[INFO]     1584 ms : org.apache.maven.doxia:doxia-site-model:2.0.0:jar (85,941 bytes)
+[INFO]       71 ms : org.apache.maven:maven-parent:43:pom (50,343 bytes)
+[INFO]      176 ms : org.codehaus.plexus:plexus-utils:4.0.2:pom (12,810 bytes)
+[INFO]      184 ms : org.apache.maven.doxia:doxia-modules:2.0.0:pom (2,508 bytes)
+[INFO]     1579 ms : org.apache.maven.surefire:surefire-logger-api:3.5.5:jar (13,559 bytes)
+[INFO]      248 ms : org.apache.commons:commons-parent:22:pom (41,918 bytes)
+[INFO]       86 ms : org.apache.maven.doxia:doxia-module-xdoc:2.0.0:pom (5,386 bytes)
+[INFO]     1580 ms : org.apache.maven.doxia:doxia-sink-api:2.0.0:jar (11,330 bytes)
+[INFO]       65 ms : org.apache.maven.reporting:maven-reporting-api:4.0.0:pom (2,793 bytes)
+[INFO]       75 ms : org.eclipse.sisu:org.eclipse.sisu.inject:0.9.0.M4:pom (17,918 bytes)
+[INFO]      117 ms : org.apache.maven.plugins:maven-surefire-report-plugin:3.5.5:jar (46,201 bytes)
+[INFO]       68 ms : org.apache.maven.doxia:doxia-module-xhtml5:2.0.0:pom (2,898 bytes)
+[INFO]      176 ms : commons-codec:commons-codec:1.19.0:pom (18,008 bytes)
+[INFO]     1594 ms : org.apache.maven.doxia:doxia-module-xdoc:2.0.0:jar (35,212 bytes)
+[INFO]      200 ms : org.apache.maven.doxia:doxia-site-renderer:2.0.0:pom (7,378 bytes)
+[INFO]       66 ms : org.apache.maven.shared:maven-shared-components:43:pom (3,773 bytes)
+[INFO]     1593 ms : org.apache.maven.doxia:doxia-module-apt:2.0.0:jar (53,877 bytes)
+[INFO]     1605 ms : org.codehaus.plexus:plexus-interpolation:1.29:jar (88,118 bytes)
+[INFO]       87 ms : org.apache.maven:maven-parent:47:pom (53,612 bytes)
+[INFO]      216 ms : org.apache.velocity:velocity-master:4:pom (7,769 bytes)
+[INFO]       67 ms : org.apache.maven.doxia:doxia-core:2.0.0:pom (3,908 bytes)
+[INFO]       69 ms : org.junit:junit-bom:5.12.2:pom (5,649 bytes)
+[INFO]      180 ms : org.apache.maven.skins:maven-fluido-skin:2.0.0-M9:jar (355,210 bytes)
+[INFO]       90 ms : org.apache.commons:commons-digester3:3.2:pom (17,589 bytes)
+[INFO]     1580 ms : org.apache.maven.surefire:surefire-report-parser:3.5.5:jar (22,391 bytes)
+[INFO]       97 ms : org.apache.velocity.tools:velocity-tools-generic:3.1:pom (2,561 bytes)
+[INFO]       73 ms : org.apache.maven.release:maven-release:3.0.1:pom (11,199 bytes)
+[INFO]      178 ms : org.apache:apache:37:pom (25,620 bytes)
+[INFO]       91 ms : org.apache:apache:9:pom (15,160 bytes)
+[INFO]       86 ms : commons-beanutils:commons-beanutils:1.9.4:pom (18,005 bytes)
+[INFO]     1594 ms : org.eclipse.sisu:org.eclipse.sisu.plexus:0.9.0.M4:jar (215,833 bytes)
+[INFO]     1594 ms : org.apache.commons:commons-compress:1.28.0:jar (1,117,221 bytes)
+[INFO]       68 ms : org.apache:apache:33:pom (24,184 bytes)
+[INFO]       66 ms : org.apache.maven.doxia:doxia-integration-tools:2.0.0:pom (7,750 bytes)
+[INFO]      138 ms : org.apache.maven.plugins:maven-release-plugin:3.0.1:jar (61,410 bytes)
+[INFO]       74 ms : org.apache.velocity:velocity-master:7:pom (7,923 bytes)
+[INFO]     1584 ms : org.apache.maven.reporting:maven-reporting-api:4.0.0:jar (9,763 bytes)
+[INFO]     1605 ms : org.codehaus.plexus:plexus-i18n:1.1.0:jar (10,216 bytes)
+[INFO]       68 ms : org.apache.velocity:velocity-engine-parent:2.3:pom (13,829 bytes)
+[INFO]       69 ms : org.apache.maven.doxia:doxia-sink-api:2.0.0:pom (1,391 bytes)
+[INFO]       72 ms : org.apache.maven.surefire:surefire-logger-api:3.5.5:pom (3,493 bytes)
+[INFO]       84 ms : org.apache.velocity:velocity-engine-core:2.4:pom (11,981 bytes)
+[INFO]       67 ms : org.junit:junit-bom:5.11.2:pom (5,649 bytes)
+[INFO]       71 ms : org.eclipse.sisu:sisu-inject:0.9.0.M4:pom (25,362 bytes)
+[INFO]     1590 ms : org.apache.maven.doxia:doxia-module-xhtml5:2.0.0:jar (17,036 bytes)
+[INFO]       84 ms : org.codehaus.plexus:plexus:24:pom (31,377 bytes)
+[INFO]     1585 ms : org.apache.maven.doxia:doxia-integration-tools:2.0.0:jar (50,040 bytes)
+[INFO]       66 ms : org.apache.maven.doxia:doxia-site-model:2.0.0:pom (5,827 bytes)
+[INFO]     1590 ms : org.codehaus.plexus:plexus-velocity:2.2.0:jar (5,671 bytes)
+[INFO]      105 ms : org.apache.commons:commons-parent:14:pom (31,389 bytes)
+[INFO]       79 ms : org.codehaus.plexus:plexus:19:pom (25,385 bytes)
+[INFO]       70 ms : org.apache.maven.reporting:maven-reporting-impl:4.0.0:pom (8,763 bytes)
+[INFO]       85 ms : org.apache.velocity:velocity-engine-core:2.3:pom (10,473 bytes)
+[INFO]     1604 ms : org.codehaus.plexus:plexus-xml:3.0.1:jar (94,331 bytes)
+[INFO]     1595 ms : org.ow2.asm:asm:9.8:jar (126,113 bytes)
+[INFO]     1595 ms : org.eclipse.sisu:org.eclipse.sisu.inject:0.9.0.M4:jar (305,040 bytes)
+[INFO]     1604 ms : org.codehaus.plexus:plexus-classworlds:2.6.0:jar (52,873 bytes)
+[INFO]       70 ms : org.codehaus.plexus:plexus:18:pom (29,238 bytes)
+[INFO]      200 ms : org.apache.commons:commons-parent:5:pom (16,041 bytes)
+[INFO]     1589 ms : org.apache.maven.doxia:doxia-skin-model:2.0.0:jar (16,392 bytes)
+[INFO]      255 ms : com.github.cliftonlabs:json-simple:3.0.2:pom (7,473 bytes)
+[INFO]     1583 ms : org.codehaus.plexus:plexus-utils:4.0.2:jar (192,537 bytes)
+[INFO] 
+[INFO] 53,713 ms  5,262,613 bytes. 0.093 MiB / s
+[INFO] Metadata Download summary: 668 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] ForkTime: 651
+[INFO] ProjectTimer: org.example:nbank-tests:jar:1.0-SNAPSHOT : 649
+gins:maven-release-plugin:3.0.1:jar (61,410 bytes)
+[INFO]       72 ms : org.apache.velocity:velocity-master:7:pom (7,923 bytes)
+[INFO]     1563 ms : org.apache.maven.reporting:maven-reporting-api:4.0.0:jar (9,763 bytes)
+[INFO]     1609 ms : org.codehaus.plexus:plexus-i18n:1.1.0:jar (10,216 bytes)
+[INFO]       69 ms : org.apache.velocity:velocity-engine-parent:2.3:pom (13,829 bytes)
+[INFO]       70 ms : org.apache.maven.doxia:doxia-sink-api:2.0.0:pom (1,391 bytes)
+[INFO]       82 ms : org.apache.maven.surefire:surefire-logger-api:3.5.5:pom (3,493 bytes)
+[INFO]       78 ms : org.apache.velocity:velocity-engine-core:2.4:pom (11,981 bytes)
+[INFO]       68 ms : org.junit:junit-bom:5.11.2:pom (5,649 bytes)
+[INFO]       76 ms : org.eclipse.sisu:sisu-inject:0.9.0.M4:pom (25,362 bytes)
+[INFO]     1566 ms : org.apache.maven.doxia:doxia-module-xhtml5:2.0.0:jar (17,036 bytes)
+[INFO]       81 ms : org.codehaus.plexus:plexus:24:pom (31,377 bytes)
+[INFO]     1565 ms : org.apache.maven.doxia:doxia-integration-tools:2.0.0:jar (50,040 bytes)
+[INFO]       68 ms : org.apache.maven.doxia:doxia-site-model:2.0.0:pom (5,827 bytes)
+[INFO]     1568 ms : org.codehaus.plexus:plexus-velocity:2.2.0:jar (5,671 bytes)
+[INFO]       85 ms : org.apache.commons:commons-parent:14:pom (31,389 bytes)
+[INFO]       72 ms : org.codehaus.plexus:plexus:19:pom (25,385 bytes)
+[INFO]       78 ms : org.apache.maven.reporting:maven-reporting-impl:4.0.0:pom (8,763 bytes)
+[INFO]       71 ms : org.apache.velocity:velocity-engine-core:2.3:pom (10,473 bytes)
+[INFO]     1606 ms : org.codehaus.plexus:plexus-xml:3.0.1:jar (94,331 bytes)
+[INFO]     1578 ms : org.ow2.asm:asm:9.8:jar (126,113 bytes)
+[INFO]     1577 ms : org.eclipse.sisu:org.eclipse.sisu.inject:0.9.0.M4:jar (305,040 bytes)
+[INFO]     1604 ms : org.codehaus.plexus:plexus-classworlds:2.6.0:jar (52,873 bytes)
+[INFO]       80 ms : org.codehaus.plexus:plexus:18:pom (29,238 bytes)
+[INFO]       73 ms : org.apache.commons:commons-parent:5:pom (16,041 bytes)
+[INFO]     1565 ms : org.apache.maven.doxia:doxia-skin-model:2.0.0:jar (16,392 bytes)
+[INFO]      159 ms : com.github.cliftonlabs:json-simple:3.0.2:pom (7,473 bytes)
+[INFO]     1560 ms : org.codehaus.plexus:plexus-utils:4.0.2:jar (192,537 bytes)
+[INFO] 
+[INFO] 52,661 ms  5,262,613 bytes. 0.095 MiB / s
+[INFO] Metadata Download summary: 1,077 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] ForkTime: 610
+[INFO] ProjectTimer: org.example:nbank-tests:jar:1.0-SNAPSHOT : 609

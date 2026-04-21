@@ -1,0 +1,65 @@
+services:
+  backend:
+    image: nobugsme/nbank:with_validation_fix
+    ports:
+      - "4111:4111"
+    networks:
+      - nbank-network
+
+  frontend:
+    image: nobugsme/nbank-ui:latest
+    expose:
+      - "80"
+    depends_on:
+      - backend
+    networks:
+      - nbank-network
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - nbank-network
+
+  selenoid:
+    # Selenoid 1.11.3 cannot talk to modern Docker Engine API (>= 1.44),
+    # which breaks UI tests with "client version 1.24 is too old".
+    # Use a standalone Selenium server instead.
+    image: selenium/standalone-chrome:latest
+    platform: linux/amd64
+    ports:
+      - "4444:4444"
+    shm_size: 2gb
+    networks:
+      - nbank-network
+
+  tests:
+    platform: linux/amd64
+    profiles:
+      - tests
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    environment:
+      TEST_PROFILE: ${TEST_PROFILE:-api}
+      NBANK_SERVER: http://backend:4111
+      NBANK_BASE_URL: http://nginx
+      SELENIUM_REMOTE_URL: http://selenoid:4444/wd/hub
+    depends_on:
+      - nginx
+      - selenoid
+    networks:
+      - nbank-network
+    volumes:
+      - ../target/.docker-surefire-reports:/app/target/surefire-reports
+      - ../target/.docker-reports:/app/target/reports
+
+networks:
+  nbank-network:
+    name: nbank-network
