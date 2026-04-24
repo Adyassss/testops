@@ -8,6 +8,7 @@ jobs:
   run-tests:
     name: Set up services and run tests
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
@@ -16,8 +17,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: corretto
-          java-version: "21"
+          distribution: temurin
+          java-version: "17"
 
       - name: Cache Maven repository
         uses: actions/cache@v4
@@ -27,6 +28,57 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Run tests via docker-compose
-        run: bash infra/run-tests-with-docker-compose.sh all
+      - name: Start infra services
+        run: docker compose -f infra/docker-compose.yml up -d --pull always backend frontend nginx selenoid
 
+      - name: Wait for services
+        shell: bash
+        run: |
+          set -euo pipefail
+          wait_http() {
+            local url=$1
+            local label=$2
+            local max_attempts=${3:-45}
+            local i=0
+            echo ">>> waiting: $label"
+            while (( i++ < max_attempts )); do
+              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url" 2>/dev/null; then
+                echo ">>> ready: $label"
+                return 0
+              fi
+              printf ' .'
+              sleep 2
+            done
+            echo ""
+            echo "timeout waiting for $label ($url)"
+            docker compose -f infra/docker-compose.yml ps
+            docker compose -f infra/docker-compose.yml logs --no-color --tail=200
+            exit 1
+          }
+          wait_http "http://127.0.0.1:4111/" "backend :4111"
+          wait_http "http://127.0.0.1/" "nginx :80"
+          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium :4444"
+
+      - name: Run API tests
+        env:
+          NBANK_SERVER: http://localhost:4111
+          NBANK_BASE_URL: http://localhost
+        run: mvn -B test -P api
+
+      - name: Run UI tests
+        env:
+          NBANK_SERVER: http://localhost:4111
+          NBANK_BASE_URL: http://localhost
+          SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
+        run: mvn -B test -P ui
+
+      - name: Upload surefire reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports
+
+      - name: Shutdown infra
+        if: always()
+        run: docker compose -f infra/docker-compose.yml down
