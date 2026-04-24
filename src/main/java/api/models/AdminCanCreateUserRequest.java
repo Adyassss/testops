@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
+//
 public class AdminCanCreateUserRequest extends BaseModel {
     @GeneratingRule(regex = "^[A-Za-z0-9]{3,15}$")
     private String username;
