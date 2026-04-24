@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="седьмой пайплайн" />
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="восьмной пайплайн" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -517,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777006496970</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="восьмной пайплайн">
+      <option name="closed" value="true" />
+      <created>1777007843705</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1777007843705</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +557,8 @@
     <MESSAGE value="пятый пайплайн" />
     <MESSAGE value="шестой пайплайн" />
     <MESSAGE value="седьмой пайплайн" />
-    <option name="LAST_COMMIT_MESSAGE" value="седьмой пайплайн" />
+    <MESSAGE value="восьмной пайплайн" />
+    <option name="LAST_COMMIT_MESSAGE" value="восьмной пайплайн" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
