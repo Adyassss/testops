@@ -94,7 +94,7 @@ jobs:
       - name: Push dockerHub
         run: bash ./push-tests.sh
         env:
-          DOCKERHUB_TOKEN: ${{ secret.DOCKERHUB_TOKEN }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
