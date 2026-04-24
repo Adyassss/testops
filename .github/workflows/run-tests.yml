@@ -92,7 +92,11 @@ jobs:
           done
 
       - name: Push dockerHub
-        run: push-tests.sh
+        run: bash ./push-tests.sh
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          TAG: ${{ github.sha }}
 
       - name: Shutdown infra
         if: always()
