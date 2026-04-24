@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="шестой пайплайн">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/run-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="седьмой пайплайн" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -512,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777004600360</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="седьмой пайплайн">
+      <option name="closed" value="true" />
+      <created>1777006496970</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1777006496970</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +548,8 @@
     <MESSAGE value="Второй пайплайн" />
     <MESSAGE value="пятый пайплайн" />
     <MESSAGE value="шестой пайплайн" />
-    <option name="LAST_COMMIT_MESSAGE" value="шестой пайплайн" />
+    <MESSAGE value="седьмой пайплайн" />
+    <option name="LAST_COMMIT_MESSAGE" value="седьмой пайплайн" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
