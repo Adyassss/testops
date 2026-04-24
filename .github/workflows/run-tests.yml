@@ -67,7 +67,9 @@ jobs:
       - name: Run UI tests
         env:
           NBANK_SERVER: http://localhost:4111
-          NBANK_BASE_URL: http://localhost
+          # UI opens in a remote browser container (selenium). For that container,
+          # "localhost" points to itself, not the GitHub runner. Use docker-compose service name.
+          NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
         run: mvn -B test -P ui
 
