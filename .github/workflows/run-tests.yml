@@ -100,25 +100,56 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Build test report
-        if: always()
-        uses: simple-elf/allure-report-action@v1.7
-        with:
-          gh_pages: gh-pages
-          allure_results: target/allure-results
-          allure_history: allure-history
-
-      - name: Build Swagger coverage report
+      - name: Prepare Allure history
         if: always()
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p "allure-history/${{ github.run_number }}"
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html "allure-history/${{ github.run_number }}/"
-          else
-            echo "swagger-coverage-report.html not found"
+          mkdir -p target/allure-results/history
+          if [ -d gh-pages/history ]; then
+            cp -r gh-pages/history/* target/allure-results/history/ || true
           fi
+
+      - name: Build Allure report
+        if: always()
+        run: mvn -B allure:report
+
+      - name: Prepare publish directory
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf allure-history
+          mkdir -p allure-history
+
+          # Preserve previously published reports (including per-run folders).
+          if [ -d gh-pages ]; then
+            cp -r gh-pages/* allure-history/ || true
+          fi
+
+          mkdir -p "allure-history/${{ github.run_number }}"
+
+          if [ -d target/site/allure-maven-plugin ]; then
+            # Latest report in the root
+            cp -r target/site/allure-maven-plugin/* allure-history/
+            # Also keep a per-run copy (as in the lesson)
+            cp -r target/site/allure-maven-plugin/* "allure-history/${{ github.run_number }}/"
+          else
+            echo "Allure report not found at target/site/allure-maven-plugin"
+          fi
+
+          # swagger-coverage generates HTML in repo root by default
+          if [ -f swagger-coverage-report.html ]; then
+            cp swagger-coverage-report.html allure-history/swagger-coverage-report.html
+            cp swagger-coverage-report.html "allure-history/${{ github.run_number }}/swagger-coverage-report.html"
+          fi
+
+          echo "Allure latest: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          echo "Allure this run: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/"
+          {
+            echo "Allure (latest): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+            echo "Allure (this run): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
