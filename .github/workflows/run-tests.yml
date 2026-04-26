@@ -85,7 +85,7 @@ jobs:
 
       - name: Run Swagger coverage
         if: always()
-        run: .swagger-coverage-commandline/bin/swagger-coverage-commandline -s http://localhost:4111/v3/api-docs -i target/swagger-coverage-output
+        run: mvn swagger-coverage:run
 
       - name: Generate Allure Report
         if: always()
@@ -93,7 +93,12 @@ jobs:
 
       - name: Build Swagger coverage report
         if: always()
-        run: sudo cp swagger-coverage-report.html allure-history/${{ github.run_number }}
+        run: |
+          if [ -f swagger-coverage-report.html ]; then
+            cp swagger-coverage-report.html allure-history/${{ github.run_number }}
+          else
+            echo "Swagger report not found, skipping"
+          fi
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
