@@ -144,22 +144,26 @@ jobs:
         if: always()
         run: mvn -B allure:report
 
-      - name: Prepare site to publish
+      - name: Prepare publish directory
         if: always()
         shell: bash
         run: |
           set -euo pipefail
-          rm -rf site
-          mkdir -p site
+          rm -rf allure-history
+          mkdir -p "allure-history/${{ github.run_number }}"
 
           if [ -d target/site/allure-maven-plugin ]; then
-            cp -r target/site/allure-maven-plugin/* site/
+            # Latest report in the root
+            cp -r target/site/allure-maven-plugin/* allure-history/
+            # Also keep a per-run copy (as in the lesson)
+            cp -r target/site/allure-maven-plugin/* "allure-history/${{ github.run_number }}/"
           else
             echo "Allure report not found at target/site/allure-maven-plugin"
           fi
 
           if [ -f target/swagger-coverage-report.html ]; then
-            cp target/swagger-coverage-report.html site/swagger-coverage.html
+            cp target/swagger-coverage-report.html allure-history/swagger-coverage.html
+            cp target/swagger-coverage-report.html "allure-history/${{ github.run_number }}/swagger-coverage.html"
           fi
 
       - name: Publish test report
@@ -168,7 +172,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: site
+          publish_dir: allure-history
 
       - name: Shutdown infra
         if: always()
