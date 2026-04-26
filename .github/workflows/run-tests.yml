@@ -68,19 +68,6 @@ jobs:
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
         run: mvn -B test -P ui
 
-      - name: Dump surefire reports on failure
-        if: failure()
-        shell: bash
-        run: |
-          set -euo pipefail
-          echo ">>> surefire-reports listing"
-          ls -la target/surefire-reports || true
-          echo ">>> last 200 lines of each *.txt (if any)"
-          for f in target/surefire-reports/*.txt; do
-            [ -e "$f" ] || continue
-            echo "===== $f ====="
-            tail -n 200 "$f" || true
-          done
 
       - name: Push dockerHub
         run: bash ./push-tests.sh
