@@ -89,46 +89,36 @@ jobs:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
-      # Swagger coverage
       - name: Run Swagger coverage
         if: always()
-        run: |
-          curl -L -o swagger.zip https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip
-          unzip -q swagger.zip
-          ./swagger-coverage-commandline/bin/swagger-coverage-commandline \
-            -s http://localhost:4111/v3/api-docs \
-            -i target/swagger-coverage-output \
-            -o swagger-coverage-report.html
+        run: .swagger-coverage-commandline/bin/swagger-coverage-commandline -s http://localhost:4111/v3/api-docs -i target/swagger-coverage-output
 
-      # Allure report
-      - name: Build Allure report
+      - name: Load test report history
+        uses: actions/checkout@v2
         if: always()
-        run: mvn allure:report
+        with:
+          ref: gh-pages
+          path: gh-pages
 
-      # Prepare gh-pages
-      - name: Prepare reports
+      - name: Build test report
+        uses: simple-elf/allure-report-action@v1.7
         if: always()
-        run: |
-          mkdir -p gh-pages
+        with:
+          gh_pages: gh-pages
+          allure_results: target/allure-results
+          allure_history: allure-history
 
-          if [ -d target/site/allure-maven-plugin ]; then
-            cp -r target/site/allure-maven-plugin/* gh-pages/
-          fi
+      - name: Build Swagger coverage report
+        if: always()
+        run: sudo cp swagger-coverage-report.html allure-history/${{ github.run_number }}
 
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html gh-pages/coverage.html
-          fi
-
-      # Publish to gh-pages
       - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: gh-pages
-
-      # Shutdown infra
+          publish_dir: allure-history
       - name: Shutdown infra
         if: always()
         run: docker compose -f infra/docker-compose.yml down
