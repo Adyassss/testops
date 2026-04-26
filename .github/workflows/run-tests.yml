@@ -1,6 +1,6 @@
 name: Run Tests
 
-on: [ push, workflow_dispatch ]
+on: [push, workflow_dispatch]
 
 jobs:
   run-tests:
@@ -75,7 +75,7 @@ jobs:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
-      # ✅ Swagger coverage (СТАБИЛЬНО через CLI)
+      # Swagger coverage
       - name: Run Swagger coverage
         if: always()
         run: |
@@ -83,26 +83,29 @@ jobs:
           unzip -q swagger.zip
           ./swagger-coverage-commandline/bin/swagger-coverage-commandline \
             -s http://localhost:4111/v3/api-docs \
-            -i target/swagger-coverage-output
+            -i target/swagger-coverage-output \
+            -o swagger-coverage-report.html
 
-      # ✅ Allure report (без broken plugin)
-      - name: Generate Allure Report
-        if: always()
-        run: mvn test
-
-      - name: Build Allure site
+      # Allure report
+      - name: Build Allure report
         if: always()
         run: mvn allure:report
 
-      # ✅ создаём папку для публикации
+      # Prepare gh-pages
       - name: Prepare reports
         if: always()
         run: |
           mkdir -p gh-pages
-          cp -r target/site/allure-maven-plugin/* gh-pages/ || true
-          cp swagger-coverage-report.html gh-pages/coverage.html || true
 
-      # ✅ публикация
+          if [ -d target/site/allure-maven-plugin ]; then
+            cp -r target/site/allure-maven-plugin/* gh-pages/
+          fi
+
+          if [ -f swagger-coverage-report.html ]; then
+            cp swagger-coverage-report.html gh-pages/coverage.html
+          fi
+
+      # Publish to gh-pages
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v4
         if: always()
@@ -111,6 +114,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: gh-pages
 
+      # Shutdown infra
       - name: Shutdown infra
         if: always()
         run: docker compose -f infra/docker-compose.yml down
