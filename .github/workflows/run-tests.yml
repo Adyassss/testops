@@ -4,7 +4,6 @@ on: [ push, workflow_dispatch ]
 
 jobs:
   run-tests:
-    name: Set up services and run tests
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -25,7 +24,6 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-            
 
       - name: Run CheckStyle with Maven
         run: mvn checkstyle:checkstyle
@@ -42,24 +40,20 @@ jobs:
             local label=$2
             local max_attempts=${3:-45}
             local i=0
-            echo ">>> waiting: $label"
             while (( i++ < max_attempts )); do
-              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url" 2>/dev/null; then
-                echo ">>> ready: $label"
+              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url"; then
+                echo "$label ready"
                 return 0
               fi
-              printf ' .'
               sleep 2
             done
-            echo ""
-            echo "timeout waiting for $label ($url)"
-            docker compose -f infra/docker-compose.yml ps
-            docker compose -f infra/docker-compose.yml logs --no-color --tail=200
+            echo "timeout: $label"
             exit 1
           }
-          wait_http "http://127.0.0.1:4111/" "backend :4111"
-          wait_http "http://127.0.0.1/" "nginx :80"
-          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium :4444"
+
+          wait_http "http://127.0.0.1:4111/" "backend"
+          wait_http "http://127.0.0.1/" "nginx"
+          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium"
 
       - name: Run API tests
         env:
@@ -70,8 +64,6 @@ jobs:
       - name: Run UI tests
         env:
           NBANK_SERVER: http://localhost:4111
-          # UI opens in a remote browser container (selenium). For that container,
-          # "localhost" points to itself, not the GitHub runner. Use docker-compose service name.
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
         run: mvn -B test -P ui
@@ -83,30 +75,41 @@ jobs:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
+      # ✅ Swagger coverage (СТАБИЛЬНО через CLI)
       - name: Run Swagger coverage
         if: always()
-        run: mvn swagger-coverage:run
+        run: |
+          curl -L -o swagger.zip https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip
+          unzip -q swagger.zip
+          ./swagger-coverage-commandline/bin/swagger-coverage-commandline \
+            -s http://localhost:4111/v3/api-docs \
+            -i target/swagger-coverage-output
 
+      # ✅ Allure report (без broken plugin)
       - name: Generate Allure Report
+        if: always()
+        run: mvn test
+
+      - name: Build Allure site
         if: always()
         run: mvn allure:report
 
-      - name: Build Swagger coverage report
+      # ✅ создаём папку для публикации
+      - name: Prepare reports
         if: always()
         run: |
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html allure-history/${{ github.run_number }}
-          else
-            echo "Swagger report not found, skipping"
-          fi
+          mkdir -p gh-pages
+          cp -r target/site/allure-maven-plugin/* gh-pages/ || true
+          cp swagger-coverage-report.html gh-pages/coverage.html || true
 
+      # ✅ публикация
       - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: always()
         with:
-             github_token: ${{ secrets.GITHUB_TOKEN }}
-             publish_branch: gh-pages
-             publish_dir: allure-history
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: gh-pages
 
       - name: Shutdown infra
         if: always()
