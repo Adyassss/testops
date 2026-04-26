@@ -1,0 +1,133 @@
+name: Run Tests
+
+on: [ push, workflow_dispatch ]
+
+jobs:
+  run-tests:
+    name: Set up services and run tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Cache Maven repository
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+            
+
+      - name: Run CheckStyle with Maven
+        run: mvn checkstyle:checkstyle
+
+      - name: Start infra services
+        run: docker compose -f infra/docker-compose.yml up -d --pull always backend frontend nginx selenoid
+
+      - name: Wait for services
+        shell: bash
+        run: |
+          set -euo pipefail
+          wait_http() {
+            local url=$1
+            local label=$2
+            local max_attempts=${3:-45}
+            local i=0
+            echo ">>> waiting: $label"
+            while (( i++ < max_attempts )); do
+              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url" 2>/dev/null; then
+                echo ">>> ready: $label"
+                return 0
+              fi
+              printf ' .'
+              sleep 2
+            done
+            echo ""
+            echo "timeout waiting for $label ($url)"
+            docker compose -f infra/docker-compose.yml ps
+            docker compose -f infra/docker-compose.yml logs --no-color --tail=200
+            exit 1
+          }
+          wait_http "http://127.0.0.1:4111/" "backend :4111"
+          wait_http "http://127.0.0.1/" "nginx :80"
+          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium :4444"
+
+      - name: Run API tests
+        env:
+          NBANK_SERVER: http://localhost:4111
+          NBANK_BASE_URL: http://localhost
+        run: mvn -B test -P api
+
+      - name: Run UI tests
+        env:
+          NBANK_SERVER: http://localhost:4111
+          # UI opens in a remote browser container (selenium). For that container,
+          # "localhost" points to itself, not the GitHub runner. Use docker-compose service name.
+          NBANK_BASE_URL: http://nginx
+          SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
+        run: mvn -B test -P ui
+
+      - name: Dump surefire reports on failure
+        if: failure()
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo ">>> surefire-reports listing"
+          ls -la target/surefire-reports || true
+          echo ">>> last 200 lines of each *.txt (if any)"
+          for f in target/surefire-reports/*.txt; do
+            [ -e "$f" ] || continue
+            echo "===== $f ====="
+            tail -n 200 "$f" || true
+          done
+
+      - name: Push dockerHub
+        run: bash ./push-tests.sh
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+          DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+          TAG: ${{ github.sha }}
+
+      - name: Run Swagger coverage
+        if: always()
+        run: .swagger-coverage-commandline/bin/swagger-coverage-commandline -s http://localhost:4111/v3/api-docs -i target/swagger-coverage-output
+
+      - name: Load test report history
+        uses: actions/checkout@v2
+        if: always()
+        with:
+             ref: gh-pages
+             path: gh-pages
+
+      - name: Build test report
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+              gh_pages: gh-pages
+              allure_results: target/allure-results
+              allure_history: allure-history
+
+      - name: Build Swagger coverage report
+        if: always()
+        run: sudo cp swagger-coverage-report.html allure-history/${{ github.run_number }}
+
+      - name: Publish test report
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+             github_token: ${{ secrets.GITHUB_TOKEN }}
+             publish_branch: gh-pages
+             publish_dir: allure-history
+
+      - name: Shutdown infra
+        if: always()
+        run: docker compose -f infra/docker-compose.yml down

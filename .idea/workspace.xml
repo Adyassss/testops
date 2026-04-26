@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Стабилизируем тесты" />
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="последний пайплайн">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,15 +20,15 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="super-tests" />
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +41,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Adyassss/auto.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:Adyassss/testops.git&quot;,
     &quot;accountId&quot;: &quot;fde6ad36-4354-41c4-a6ff-a12c6c5f9e74&quot;
   }
 }</component>
@@ -48,13 +52,6 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -138,6 +135,7 @@
     "JUnit.UserCanDepositUI.executor": "Run",
     "JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor": "Run",
+    "JUnit.UserCanDepositUiTest.executor": "Run",
     "JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor": "Run",
     "JUnit.UserCanTransfer.userCanTransferMoney.executor": "Run",
@@ -160,6 +158,7 @@
     "JUnit.UserCanTransferUiTest.executor": "Run",
     "JUnit.UserCanTransferUiTest.userTransferWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanTransferUiTest.userTransferWithNotCorrectDataTest.executor": "Run",
+    "Maven.nbank-tests [-B,test,-P,api].executor": "Run",
     "Maven.nbank-tests [-DskipTests=true...].executor": "Run",
     "Maven.nbank-tests [-DskipTests=true].executor": "Run",
     "Maven.nbank-tests [clean,test].executor": "Run",
@@ -175,26 +174,53 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "super-ui-tests",
+    "SHELLCHECK.PATH": "I do mind",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/adya/Downloads/auto-testops",
+    "last_opened_file_path": "/Users/adya/Downloads/auto-testops/target/allure-results",
     "onboarding.tips.debug.path": "/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/allure-results" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean test" />
       <command value="mvn -DskipTests=true" />
       <command value="mvn -DskipTests=true surefire-report:report" />
       <command value="mvn test -q -P ${TEST_PROFILE}" />
       <command value="mvn surefire-report:report" />
+      <command value="mvn clean test" />
+      <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanTransferUiTest">
+  <component name="RunManager" selected="JUnit.UserCanDepositTest.userCanDeposit">
+    <configuration name="UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nbank-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanChangeNameUiTest" />
+      <option name="METHOD_NAME" value="userChangeNameWithCorrectDataTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserCanChangeUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -210,7 +236,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCanChangeUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -219,25 +245,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCanChangeUsername" />
+      <option name="MAIN_CLASS_NAME" value="api.UserCanDepositTest" />
+      <option name="METHOD_NAME" value="userCanDeposit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCantChangeUsernameWithInvalidData(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanDepositUiTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,28 +283,24 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
-      <method v="2" />
-    </configuration>
-    <configuration name="infra: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="infra/docker-compose.yml" />
-        </settings>
+      <deployment type="dockerfile">
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserCanTransferUiTest" />
+        <item itemvalue="JUnit.UserCanDepositUiTest" />
+        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit" />
         <item itemvalue="JUnit.UserCanChangeUsernameTest" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCanChangeUsername" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" />
-        <item itemvalue="Docker.infra: Compose Deployment" />
+        <item itemvalue="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,6 +310,9 @@
         <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
       </set>
     </attachedChunks>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -460,7 +484,103 @@
       <option name="project" value="LOCAL" />
       <updated>1771296099909</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Первый пайплайн">
+      <option name="closed" value="true" />
+      <created>1777000332695</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1777000332695</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Второй пайплайн">
+      <option name="closed" value="true" />
+      <created>1777002002607</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1777002002607</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Второй пайплайн">
+      <option name="closed" value="true" />
+      <created>1777002295829</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1777002295829</updated>
+    </task>
+    <task id="LOCAL-00024" summary="пятый пайплайн">
+      <option name="closed" value="true" />
+      <created>1777002912390</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1777002912391</updated>
+    </task>
+    <task id="LOCAL-00025" summary="шестой пайплайн">
+      <option name="closed" value="true" />
+      <created>1777004600360</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1777004600360</updated>
+    </task>
+    <task id="LOCAL-00026" summary="седьмой пайплайн">
+      <option name="closed" value="true" />
+      <created>1777006496970</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1777006496970</updated>
+    </task>
+    <task id="LOCAL-00027" summary="восьмной пайплайн">
+      <option name="closed" value="true" />
+      <created>1777007843705</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1777007843705</updated>
+    </task>
+    <task id="LOCAL-00028" summary="девятый пайплайн">
+      <option name="closed" value="true" />
+      <created>1777008137111</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1777008137111</updated>
+    </task>
+    <task id="LOCAL-00029" summary="десятый пайплайн">
+      <option name="closed" value="true" />
+      <created>1777008182105</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1777008182105</updated>
+    </task>
+    <task id="LOCAL-00030" summary="последний пайплайн">
+      <option name="closed" value="true" />
+      <created>1777009022322</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1777009022323</updated>
+    </task>
+    <task id="LOCAL-00031" summary="последний пайплайн">
+      <option name="closed" value="true" />
+      <created>1777009095011</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1777009095011</updated>
+    </task>
+    <task id="LOCAL-00032" summary="последний пайплайн">
+      <option name="closed" value="true" />
+      <created>1777053563428</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777053563428</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +607,16 @@
     <MESSAGE value="Fixed middle tests" />
     <MESSAGE value="Senior Test UI" />
     <MESSAGE value="Стабилизируем тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Стабилизируем тесты" />
+    <MESSAGE value="Первый пайплайн" />
+    <MESSAGE value="Второй пайплайн" />
+    <MESSAGE value="пятый пайплайн" />
+    <MESSAGE value="шестой пайплайн" />
+    <MESSAGE value="седьмой пайплайн" />
+    <MESSAGE value="восьмной пайплайн" />
+    <MESSAGE value="девятый пайплайн" />
+    <MESSAGE value="десятый пайплайн" />
+    <MESSAGE value="последний пайплайн" />
+    <option name="LAST_COMMIT_MESSAGE" value="последний пайплайн" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
