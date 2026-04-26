@@ -5,10 +5,6 @@ on: [ push, workflow_dispatch ]
 permissions:
   contents: write
 
-env:
-  # Opt into Node.js 24 for JavaScript actions (GitHub will switch the default on June 2, 2026).
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-
 jobs:
   run-tests:
     name: Set up services and run tests
@@ -66,14 +62,14 @@ jobs:
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
-        run: mvn -B test -P api -Dallure.results.directory=target/allure-results
+        run: mvn -B test -P api
 
       - name: Run UI tests
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
-        run: mvn -B test -P ui -Dallure.results.directory=target/allure-results
+        run: mvn -B test -P ui
 
 
       - name: Push dockerHub
@@ -88,107 +84,41 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
-          download() {
-            local ver="$1"
-            local url="https://github.com/viclovsky/swagger-coverage/releases/download/${ver}/swagger-coverage-commandline-${ver}.zip"
-            echo "Downloading swagger-coverage ${ver}"
-            curl -fsSL -o swagger.zip "$url"
-          }
-
-          # If download fails (e.g. 404), don't fail the whole workflow.
-          if ! (download "1.5.0" || download "1.5.1" || download "1.6.0"); then
-            echo "Swagger coverage download failed; skipping"
-            exit 0
-          fi
-
+          curl -fsSL -o swagger.zip "https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip"
           unzip -q swagger.zip
-          chmod +x ./swagger-coverage-commandline/bin/swagger-coverage-commandline 2>/dev/null || true
-          ./swagger-coverage-commandline/bin/swagger-coverage-commandline \
+          rm -rf .swagger-coverage-commandline
+          mv swagger-coverage-commandline .swagger-coverage-commandline
+          chmod +x .swagger-coverage-commandline/bin/swagger-coverage-commandline 2>/dev/null || true
+          .swagger-coverage-commandline/bin/swagger-coverage-commandline \
             -s http://localhost:4111/v3/api-docs \
             -i target/swagger-coverage-output
 
-          # swagger-coverage обычно генерирует HTML в текущей директории
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html target/swagger-coverage-report.html
-          else
-            echo "swagger-coverage-report.html not found"
-            ls -la
-          fi
-
       - name: Load test report history
         if: always()
-        continue-on-error: true
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Prepare Allure history
+      - name: Build test report
+        if: always()
+        uses: simple-elf/allure-report-action@v1.7
+        with:
+          gh_pages: gh-pages
+          allure_results: target/allure-results
+          allure_history: allure-history
+
+      - name: Build Swagger coverage report
         if: always()
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p target/allure-results/history
-          # Some setups write into ./allure-results; merge into target/ for the maven plugin.
-          if [ -d allure-results ]; then
-            mkdir -p target/allure-results
-            cp -r allure-results/* target/allure-results/ || true
-          fi
-          if [ -d gh-pages/history ]; then
-            cp -r gh-pages/history/* target/allure-results/history/ || true
-          fi
-
-          echo "Allure results files:"
-          ls -la target/allure-results || true
-          echo "Result json count:"
-          find target/allure-results -maxdepth 1 -name '*-result.json' | wc -l || true
-
-      - name: Build Allure report
-        if: always()
-        run: mvn -B allure:report
-
-      - name: Prepare publish directory
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf allure-history
-          mkdir -p allure-history
-
-          # Preserve previously published reports (including per-run folders).
-          if [ -d gh-pages ]; then
-            cp -r gh-pages/* allure-history/ || true
-          fi
-
           mkdir -p "allure-history/${{ github.run_number }}"
-
-          if [ -d target/site/allure-maven-plugin ]; then
-            # Latest report in the root
-            cp -r target/site/allure-maven-plugin/* allure-history/
-            # Also keep a per-run copy (as in the lesson)
-            cp -r target/site/allure-maven-plugin/* "allure-history/${{ github.run_number }}/"
+          if [ -f swagger-coverage-report.html ]; then
+            cp swagger-coverage-report.html "allure-history/${{ github.run_number }}/"
           else
-            echo "Allure report not found at target/site/allure-maven-plugin"
+            echo "swagger-coverage-report.html not found"
           fi
-
-          if [ -f target/swagger-coverage-report.html ]; then
-            cp target/swagger-coverage-report.html allure-history/swagger-coverage.html
-            cp target/swagger-coverage-report.html "allure-history/${{ github.run_number }}/swagger-coverage.html"
-          fi
-
-          echo "Run number: ${{ github.run_number }}"
-
-      - name: Write report links
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-          base="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          {
-            echo "Allure (latest): ${base}"
-            echo "Allure (this run): ${base}${{ github.run_number }}/"
-          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Publish test report
         uses: peaceiris/actions-gh-pages@v3
