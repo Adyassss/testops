@@ -62,14 +62,14 @@ jobs:
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
-        run: mvn -B test -P api
+        run: mvn -B test -P api -Dallure.results.directory=target/allure-results
 
       - name: Run UI tests
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
-        run: mvn -B test -P ui
+        run: mvn -B test -P ui -Dallure.results.directory=target/allure-results
 
 
       - name: Push dockerHub
@@ -126,9 +126,19 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p target/allure-results/history
+          # Some setups write into ./allure-results; merge into target/ for the maven plugin.
+          if [ -d allure-results ]; then
+            mkdir -p target/allure-results
+            cp -r allure-results/* target/allure-results/ || true
+          fi
           if [ -d gh-pages/history ]; then
             cp -r gh-pages/history/* target/allure-results/history/ || true
           fi
+
+          echo "Allure results files:"
+          ls -la target/allure-results || true
+          echo "Result json count:"
+          find target/allure-results -maxdepth 1 -name '*-result.json' | wc -l || true
 
       - name: Build Allure report
         if: always()
