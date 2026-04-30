@@ -142,20 +142,20 @@ jobs:
             exit 0
           fi
 
-          java -jar swagger-coverage-commandline.jar \
+          java -cp swagger-coverage-commandline.jar \
+            com.github.viclovsky.swagger.coverage.commandline.Main \
             -s http://localhost:4111/v3/api-docs \
-            -i swagger-coverage-output || true
+            -i swagger-coverage-output \
+            -o swagger-coverage-report.html \
+            -j swagger-coverage-results.json || true
 
-          echo "=== swagger-coverage-output AFTER ==="
-          ls -la swagger-coverage-output || true
-
-          echo "=== generated files ==="
+          echo "=== AFTER ==="
           ls -la | grep swagger || true
 
-          if [ ! -f swagger-coverage-report.html ]; then
-            echo "❌ Swagger report NOT generated"
-          else
+          if [ -f swagger-coverage-report.html ]; then
             echo "✅ Swagger report generated"
+          else
+            echo "❌ Swagger report NOT generated"
           fi
 
       - name: Push dockerHub
