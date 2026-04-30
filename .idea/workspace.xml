@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/run-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/CrudRequesters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/CrudRequesters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/ValidatedCrudRequester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/ValidatedCrudRequester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -62,129 +68,129 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.infra: Compose Deployment.executor": "Run",
-    "HTTP Request.iteration_1 | #1.executor": "Run",
-    "HTTP Request.iteration_1 | #4.executor": "Run",
-    "HTTP Request.iteration_1 | Create user by admin.executor": "Run",
-    "HTTP Request.iteration_1 | Deposit money.executor": "Run",
-    "HTTP Request.iteration_1 | Get Auth token.executor": "Run",
-    "HTTP Request.iteration_1 | Login with user parametrs Authorization: Basic YWR5YTE5OTc6dmVyeXNUUm9uZ1Bhc3N3b3JkMzMk.executor": "Run",
-    "HTTP Request.iteration_1 | Login with user parametrs.executor": "Run",
-    "HTTP Request.iteration_1 | Negative case: Deposit money with a not valid user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | Negative case: Deposit money without user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | Transfer money with role USER.executor": "Run",
-    "HTTP Request.iteration_1 | Transfer money.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Negative case: Update username with role USER and not correct token.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Positive case: Deposit money with a valid user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Positive case: Update username with role USER.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Transfer money with not correct token.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Transfer money without.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Update username with role USER and without token.executor": "Run",
-    "HTTP Request.iteration_1 | №3 Negative case: Deposit money without user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and not correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid receiverAccountId.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Update username with role USER null.executor": "Run",
-    "HTTP Request.iteration_1 | №5 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №6 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №6 Negative case: Transfer money with not correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Transfer money with amount not have user.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Transfer money with zero amount.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Update username with role USER where username have special simbol.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero amount.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero sender.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Update username with role USER where username have spaces.executor": "Run",
-    "HTTP Request.iteration_1 | №9 Negative case: Transfer money with zero receiverAccountId.executor": "Run",
-    "JUnit.LoginUserTest.adminCanLoginWithCorrectDataTest.executor": "Debug",
-    "JUnit.UserCanChangeNameUI.UserChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.UserChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.executor": "Run",
-    "JUnit.UserCanChangeNameUI.userChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.userChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.userChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.adminCreateUser.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCanChangeUsername (1).executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCanChangeUsername.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData.executor": "Run",
-    "JUnit.UserCanDeposit.authUser.executor": "Run",
-    "JUnit.UserCanDeposit.body.executor": "Run",
-    "JUnit.UserCanDeposit.userCanDeposit (1).executor": "Run",
-    "JUnit.UserCanDeposit.userCanDeposit.executor": "Run",
-    "JUnit.UserCanDeposit.userCantDepositWithInvalidData.executor": "Run",
-    "JUnit.UserCanDepositTest.authUser.executor": "Run",
-    "JUnit.UserCanDepositTest.executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (1).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (2).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (3).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (4).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (5).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit.executor": "Run",
-    "JUnit.UserCanDepositTest.userCantDepositWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanDepositTest.userCantDepositWithInvalidData.executor": "Run",
-    "JUnit.UserCanDepositUI.UserDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.UserDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.executor": "Run",
-    "JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransfer.userCanTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (2).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (3).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoney (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (2).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData.executor": "Run",
-    "JUnit.UserCanTransferUI.UserDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.UserTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.UserTransferWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.executor": "Run",
-    "JUnit.UserCanTransferUI.userTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.userTransferWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.userTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.userTransferWithNotCorrectDataTest.executor": "Run",
-    "Maven.nbank-tests [-B,test,-P,api].executor": "Run",
-    "Maven.nbank-tests [-DskipTests=true...].executor": "Run",
-    "Maven.nbank-tests [-DskipTests=true].executor": "Run",
-    "Maven.nbank-tests [clean,test].executor": "Run",
-    "Maven.nbank-tests [clean].executor": "Run",
-    "Maven.nbank-tests [package].executor": "Run",
-    "Maven.nbank-tests [surefire-report:report].executor": "Run",
-    "Maven.nbank-tests [test,-q,-P,${TEST_PROFILE}].executor": "Run",
-    "Maven.nbank-tests [test].executor": "Run",
-    "Maven.nbank-tests [validate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHELLCHECK.PATH": "I do mind",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/adya/Downloads/auto-testops/target/allure-results",
-    "onboarding.tips.debug.path": "/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.infra: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Create user by admin.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Deposit money.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Get Auth token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Login with user parametrs Authorization: Basic YWR5YTE5OTc6dmVyeXNUUm9uZ1Bhc3N3b3JkMzMk.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Login with user parametrs.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Negative case: Deposit money with a not valid user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Negative case: Deposit money without user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Transfer money with role USER.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Transfer money.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Negative case: Update username with role USER and not correct token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Positive case: Deposit money with a valid user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Positive case: Update username with role USER.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Transfer money with not correct token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Transfer money without.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Update username with role USER and without token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №3 Negative case: Deposit money without user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and not correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid receiverAccountId.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Update username with role USER null.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №5 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №6 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №6 Negative case: Transfer money with not correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Transfer money with amount not have user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Transfer money with zero amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Update username with role USER where username have special simbol.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero sender.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Update username with role USER where username have spaces.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №9 Negative case: Transfer money with zero receiverAccountId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginUserTest.adminCanLoginWithCorrectDataTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserCanChangeNameUI.UserChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.UserChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.userChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.userChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.userChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.adminCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCanChangeUsername (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCanChangeUsername.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.authUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.body.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCanDeposit (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCanDeposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCantDepositWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.authUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (4).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (5).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCantDepositWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCantDepositWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.UserDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.UserDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransfer.userCanTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoney (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.userTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.userTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.userTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.userTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-B,test,-P,api].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-DskipTests=true...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-DskipTests=true].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [surefire-report:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [test,-q,-P,${TEST_PROFILE}].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [validate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;docker__compose&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/adya/Downloads/auto-testops/target/allure-results&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/allure-results" />
@@ -236,7 +242,6 @@
       </method>
     </configuration>
     <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="api.*" />
@@ -281,15 +286,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -331,182 +327,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00001" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767841006337</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1767841006337</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767841136261</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1767841136261</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767845457576</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1767845457576</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767845867973</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1767845867973</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add auto tests">
-      <option name="closed" value="true" />
-      <created>1767954506610</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1767954506611</updated>
-    </task>
-    <task id="LOCAL-00006" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768311028309</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1768311028309</updated>
-    </task>
-    <task id="LOCAL-00007" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768311055254</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1768311055254</updated>
-    </task>
-    <task id="LOCAL-00008" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768379315120</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1768379315120</updated>
-    </task>
-    <task id="LOCAL-00009" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768379407330</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1768379407330</updated>
-    </task>
-    <task id="LOCAL-00010" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768398660659</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1768398660659</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Middle tests">
-      <option name="closed" value="true" />
-      <created>1768783941336</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1768783941336</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Middle tests">
-      <option name="closed" value="true" />
-      <created>1768784251334</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1768784251334</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Senior tests">
-      <option name="closed" value="true" />
-      <created>1769054149719</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1769054149719</updated>
-    </task>
-    <task id="LOCAL-00014" summary="UI tests">
-      <option name="closed" value="true" />
-      <created>1769223880159</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1769223880159</updated>
-    </task>
-    <task id="LOCAL-00015" summary="UI tests">
-      <option name="closed" value="true" />
-      <created>1769431684996</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1769431684996</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Senior tests">
-      <option name="closed" value="true" />
-      <created>1769504873016</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1769504873016</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Senior tests">
-      <option name="closed" value="true" />
-      <created>1769505031245</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1769505031245</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Fixed middle tests">
-      <option name="closed" value="true" />
-      <created>1770783577266</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1770783577266</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fixed middle tests">
-      <option name="closed" value="true" />
-      <created>1770783733509</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1770783733509</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Стабилизируем тесты">
-      <option name="closed" value="true" />
-      <created>1771296099909</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1771296099909</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Первый пайплайн">
-      <option name="closed" value="true" />
-      <created>1777000332695</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1777000332695</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Второй пайплайн">
-      <option name="closed" value="true" />
-      <created>1777002002607</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1777002002607</updated>
     </task>
     <task id="LOCAL-00023" summary="Второй пайплайн">
       <option name="closed" value="true" />
@@ -636,7 +456,271 @@
       <option name="project" value="LOCAL" />
       <updated>1777172909406</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174239537</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174239537</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174740439</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174740439</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174844791</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174844791</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777175276988</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1777175276988</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777175728489</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1777175728489</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777176543771</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1777176543771</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777178201830</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1777178201830</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777179894974</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1777179894974</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777294437092</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1777294437092</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777522555053</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1777522555055</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777523725680</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1777523725680</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777525059399</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1777525059447</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777525682899</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1777525682901</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777526420030</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1777526420030</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777527570389</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1777527570394</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777532056206</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1777532056207</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777532657757</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1777532657758</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777534620892</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1777534620893</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777534935202</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1777534935202</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777535294743</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1777535294744</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777536106136</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1777536106137</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777537117657</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1777537117657</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777537186156</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1777537186157</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777538642637</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1777538642637</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777538984916</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1777538984917</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777539670677</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1777539670678</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777539722802</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1777539722802</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541362375</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541362375</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541752018</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541752019</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541795601</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541795605</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541911414</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541911415</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541959521</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541959521</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777542245307</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1777542245307</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

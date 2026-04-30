@@ -17,9 +17,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public abstract class BasePage<T extends BasePage<T>> {
     public abstract String url();
     public static String secondAcc = "";
-    protected SelenideElement usernameInput = $(Selectors.byAttribute("placeholder", "Username"));
-    protected SelenideElement passwordInput = $(Selectors.byAttribute("placeholder", "Password"));
-    protected SelenideElement loginButton = $("button");
 
     public T open(){
        return (T) Selenide.open(url(), (Class<T>) this.getClass());

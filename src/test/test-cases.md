@@ -17,7 +17,6 @@ userCanMakeDepositTest()
 6)Нажимаем на кнопку Deposit
 * Вызываем роут /api/v1/accounts/deposit
 * Получаем 200 код
-* Перенаправление на страницу Dashboard(class="container mt-4 text-center")
 
 
 ###

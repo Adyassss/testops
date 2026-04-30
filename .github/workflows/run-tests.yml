@@ -1,9 +1,18 @@
 name: Run Tests
 
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths:
+      - "src/**"
+      - "pom.xml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-tests:
+    name: Set up services and run tests
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -24,6 +33,7 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+            
 
       - name: Run CheckStyle with Maven
         run: mvn checkstyle:checkstyle
@@ -40,33 +50,99 @@ jobs:
             local label=$2
             local max_attempts=${3:-45}
             local i=0
+            echo ">>> waiting: $label"
             while (( i++ < max_attempts )); do
-              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url"; then
-                echo "$label ready"
+              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url" 2>/dev/null; then
+                echo ">>> ready: $label"
                 return 0
               fi
+              printf ' .'
               sleep 2
             done
-            echo "timeout: $label"
+            echo ""
+            echo "timeout waiting for $label ($url)"
+            docker compose -f infra/docker-compose.yml ps
+            docker compose -f infra/docker-compose.yml logs --no-color --tail=200
             exit 1
           }
-
-          wait_http "http://127.0.0.1:4111/" "backend"
-          wait_http "http://127.0.0.1/" "nginx"
-          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium"
+          wait_http "http://127.0.0.1:4111/" "backend :4111"
+          wait_http "http://127.0.0.1/" "nginx :80"
+          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium :4444"
 
       - name: Run API tests
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
-        run: mvn -B test -P api
+          SWAGGER_COVERAGE_OUTPUT: swagger-coverage-output
+        run: mvn -B test -P api -Dallure.results.directory=target/allure-results
 
       - name: Run UI tests
         env:
           NBANK_SERVER: http://localhost:4111
+          # UI opens in a remote browser container (selenium). For that container,
+          # "localhost" points to itself, not the GitHub runner. Use docker-compose service name.
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
-        run: mvn -B test -P ui
+        run: mvn -B test -P ui -Dallure.results.directory=target/allure-results
+
+      - name: Install jq
+        if: always()
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq jq
+
+      - name: Load gh-pages for Allure history
+        if: always()
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+          fetch-depth: 0
+
+      - name: Prepare Allure history and build report
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p target/allure-results/history
+
+          LATEST=$(ls -d gh-pages/test-report/*/ 2>/dev/null | sort -t'/' -k3 -nr | head -1 || true)
+          if [ -n "${LATEST:-}" ] && [ -d "${LATEST}allure-report/history" ]; then
+            cp -r "${LATEST}allure-report/history/"* target/allure-results/history/ 2>/dev/null || true
+          fi
+
+          mvn -B allure:report
+
+      - name: Download Swagger Coverage CLI (jar)
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Use Maven to fetch the jar (more stable than GitHub release assets).
+          ver="1.5.0"
+          mvn -q -DskipTests dependency:copy \
+            -Dartifact=com.github.viclovsky:swagger-coverage-commandline:${ver}:jar \
+            -DoutputDirectory=. \
+            -Dmdep.stripVersion=true || true
+
+      - name: Run Swagger coverage
+        if: always()
+        run: |
+            rm -f swagger-coverage-report.html swagger-coverage-results.json
+            if [ ! -d "swagger-coverage-output" ]; then
+              echo "ERROR: swagger-coverage-output directory not found"
+              exit 1
+            fi
+            SC_BIN=$(find . -maxdepth 4 -type f -name "swagger-coverage-commandline" ! -path "./swagger-coverage-output/*" | head -1)
+            if [ -z "$SC_BIN" ]; then
+              echo "ERROR: swagger-coverage-commandline binary not found"
+              exit 1
+            fi
+            chmod +x "$SC_BIN" 2>/dev/null || true
+            "$SC_BIN" -s http://localhost:4111/v3/api-docs -i swagger-coverage-output
+            if [ ! -f swagger-coverage-report.html ] || [ ! -f swagger-coverage-results.json ]; then
+              echo "ERROR: Swagger Coverage report files were not generated"
+              exit 1
+            fi
 
       - name: Push dockerHub
         run: bash ./push-tests.sh
@@ -75,46 +151,76 @@ jobs:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
-      # Swagger coverage
-      - name: Run Swagger coverage
+      - name: Prepare test-report structure
         if: always()
+        shell: bash
         run: |
-          curl -L -o swagger.zip https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip
-          unzip -q swagger.zip
-          ./swagger-coverage-commandline/bin/swagger-coverage-commandline \
-            -s http://localhost:4111/v3/api-docs \
-            -i target/swagger-coverage-output \
-            -o swagger-coverage-report.html
+          set -euo pipefail
+          RUN_NUM="${{ github.run_number }}"
+          rm -rf pages-publish
+          mkdir -p pages-publish/test-report
 
-      # Allure report
-      - name: Build Allure report
-        if: always()
-        run: mvn allure:report
+          if [ -d gh-pages/test-report ]; then
+            for prev in gh-pages/test-report/*/; do
+              [ -d "$prev" ] || continue
+              run=$(basename "$prev")
+              [ "$run" = "$RUN_NUM" ] && continue
+              mkdir -p "pages-publish/test-report/$run"
+              cp -r "$prev"* "pages-publish/test-report/$run/" 2>/dev/null || true
+            done
+          fi
 
-      # Prepare gh-pages
-      - name: Prepare reports
-        if: always()
-        run: |
-          mkdir -p gh-pages
+          mkdir -p "pages-publish/test-report/$RUN_NUM/allure-report"
+          mkdir -p "pages-publish/test-report/$RUN_NUM/swagger-coverage"
 
           if [ -d target/site/allure-maven-plugin ]; then
-            cp -r target/site/allure-maven-plugin/* gh-pages/
+            cp -r target/site/allure-maven-plugin/* "pages-publish/test-report/$RUN_NUM/allure-report/" 2>/dev/null || true
           fi
 
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html gh-pages/coverage.html
+          [ -f swagger-coverage-report.html ] && cp swagger-coverage-report.html "pages-publish/test-report/$RUN_NUM/swagger-coverage/swagger-coverage-report.html"
+          [ -f swagger-coverage-results.json ] && cp swagger-coverage-results.json "pages-publish/test-report/$RUN_NUM/swagger-coverage/swagger-coverage-results.json"
+
+          if [ -f swagger-coverage-results.json ]; then
+            FULL=$(jq -r '.coverageOperationMap.counter.full // 0' swagger-coverage-results.json)
+            PARTY=$(jq -r '.coverageOperationMap.counter.party // 0' swagger-coverage-results.json)
+            ALL=$(jq -r '.coverageOperationMap.counter.all // 1' swagger-coverage-results.json)
+            [ "$ALL" -gt 0 ] && COVERAGE=$(( (FULL + PARTY) * 100 / ALL )) || COVERAGE=0
+            mkdir -p "pages-publish/test-report/$RUN_NUM/allure-report/widgets"
+            echo "{\"apiCoverage\": $COVERAGE, \"full\": $FULL, \"partial\": $PARTY, \"total\": $ALL}" > "pages-publish/test-report/$RUN_NUM/allure-report/widgets/coverage.json"
           fi
 
-      # Publish to gh-pages
-      - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Create index.html for test-report
         if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Test Reports</title></head><body><h1>Test Reports</h1><ul>' > pages-publish/index.html
+          for dir in pages-publish/test-report/*/; do
+            [ -d "$dir" ] || continue
+            run=$(basename "$dir")
+            [[ "$run" =~ ^[0-9]+$ ]] || continue
+            echo "<li>Run #$run: <a href=\"test-report/$run/allure-report/index.html\">Allure Report</a> | <a href=\"test-report/$run/swagger-coverage/swagger-coverage-report.html\">Swagger Coverage</a></li>" >> pages-publish/index.html
+          done
+          echo '</ul></body></html>' >> pages-publish/index.html
+
+          echo "Reports index: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> "$GITHUB_STEP_SUMMARY"
+          echo "Allure (this run): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/test-report/${{ github.run_number }}/allure-report/index.html" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: gh-pages
+          publish_dir: pages-publish
 
-      # Shutdown infra
+      - name: Upload reports artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-publish
+          path: pages-publish
+
       - name: Shutdown infra
         if: always()
         run: docker compose -f infra/docker-compose.yml down
