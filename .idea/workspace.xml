@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/run-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,14 +335,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00008" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768379315120</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1768379315120</updated>
     </task>
     <task id="LOCAL-00009" summary="I’ve fixed the mistakes.">
       <option name="closed" value="true" />
@@ -726,7 +720,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777534620893</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777534935202</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1777534935202</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

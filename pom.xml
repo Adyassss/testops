@@ -13,8 +13,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <junit.platform.version>1.10.2</junit.platform.version>
     </properties>
 
     <dependencies>
@@ -22,15 +20,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>${junit.jupiter.version}</version>
-        </dependency>
-
-        <!-- Keep JUnit Platform artifacts consistent to avoid Surefire fork errors -->
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit.platform.version}</version>
-            <scope>test</scope>
+            <version>5.9.1</version>
         </dependency>
 
         <dependency>
@@ -74,33 +64,6 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.14.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit5</artifactId>
-            <version>2.29.1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-rest-assured</artifactId>
-            <version>2.29.1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-selenide</artifactId>
-            <version>2.29.1</version>
-        </dependency>
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-assertj</artifactId>
-            <version>2.29.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.viclovsky</groupId>
-            <artifactId>swagger-coverage-rest-assured</artifactId>
-            <version>1.5.0</version>
-        </dependency>
-
 
     </dependencies>
 
@@ -164,15 +127,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
-            </plugin>
-
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.12.0</version>
-                <configuration>
-                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-                </configuration>
             </plugin>
 
         </plugins>
