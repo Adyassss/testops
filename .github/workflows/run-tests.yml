@@ -1,4 +1,4 @@
-name: Run Tests
+name: Run tests
 
 on: [ push, workflow_dispatch ]
 
@@ -7,21 +7,22 @@ permissions:
 
 jobs:
   run-tests:
-    name: Set up services and run tests
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
-
     steps:
+      # --- checkout ---
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # --- java ---
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: "17"
 
+      # --- maven cache ---
       - name: Cache Maven repository
         uses: actions/cache@v4
         with:
@@ -30,49 +31,50 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Run CheckStyle with Maven
+      # --- install jq ---
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      # --- checkstyle ---
+      - name: Run CheckStyle
         run: mvn checkstyle:checkstyle
 
-      - name: Start infra services
+      # --- infra ---
+      - name: Start infra
         run: docker compose -f infra/docker-compose.yml up -d --pull always backend frontend nginx selenoid
 
+      # --- wait services ---
       - name: Wait for services
-        shell: bash
         run: |
-          set -euo pipefail
-          wait_http() {
-            local url=$1
-            local label=$2
-            local max_attempts=${3:-45}
-            local i=0
-            while (( i++ < max_attempts )); do
-              if curl -sS --connect-timeout 2 --max-time 8 -o /dev/null "$url"; then
-                echo "$label ready"
-                return 0
-              fi
+          set -e
+          wait() {
+            for i in {1..40}; do
+              curl -s "$1" && return 0
               sleep 2
             done
+            echo "Service not ready: $1"
             exit 1
           }
 
-          wait_http "http://127.0.0.1:4111/" "backend"
-          wait_http "http://127.0.0.1/" "nginx"
-          wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium"
+          wait http://localhost:4111
+          wait http://localhost
+          wait http://localhost:4444/wd/hub/status
 
+      # --- tests ---
       - name: Run API tests
+        run: mvn -B test -P api
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
-        run: mvn -B test -P api
 
       - name: Run UI tests
+        run: mvn -B test -P ui
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
-        run: mvn -B test -P ui
 
-
+      # --- docker push ---
       - name: Push dockerHub
         run: bash ./push-tests.sh
         env:
@@ -80,86 +82,66 @@ jobs:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
           TAG: ${{ github.sha }}
 
+      # --- swagger coverage ---
       - name: Run Swagger coverage
         if: always()
-        shell: bash
         run: |
-          set -euo pipefail
-          curl -fsSL -o swagger.zip "https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip"
-          unzip -q swagger.zip
-          rm -rf .swagger-coverage-commandline
-          mv swagger-coverage-commandline .swagger-coverage-commandline
-          chmod +x .swagger-coverage-commandline/bin/swagger-coverage-commandline 2>/dev/null || true
-          .swagger-coverage-commandline/bin/swagger-coverage-commandline \
+          curl -L -o swagger.zip https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-1.5.0.zip
+          unzip -o swagger.zip
+
+          SC_BIN=$(find . -type f -name "swagger-coverage-commandline" | head -1)
+          chmod +x $SC_BIN
+
+          $SC_BIN \
             -s http://localhost:4111/v3/api-docs \
-            -i target/swagger-coverage-output
+            -i swagger-coverage-output
 
-      - name: Load test report history
-        if: always()
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Prepare Allure history
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p target/allure-results/history
-          if [ -d gh-pages/history ]; then
-            cp -r gh-pages/history/* target/allure-results/history/ || true
-          fi
-
+      # --- allure ---
       - name: Build Allure report
         if: always()
-        run: mvn -B allure:report
-
-      - name: Prepare publish directory
-        if: always()
-        shell: bash
         run: |
-          set -euo pipefail
-          rm -rf allure-history
+          mvn allure:report
           mkdir -p allure-history
+          cp -r target/site/allure-maven-plugin/* allure-history/ || true
 
-          # Preserve previously published reports (including per-run folders).
-          if [ -d gh-pages ]; then
-            cp -r gh-pages/* allure-history/ || true
-          fi
-
-          mkdir -p "allure-history/${{ github.run_number }}"
-
-          if [ -d target/site/allure-maven-plugin ]; then
-            # Latest report in the root
-            cp -r target/site/allure-maven-plugin/* allure-history/
-            # Also keep a per-run copy (as in the lesson)
-            cp -r target/site/allure-maven-plugin/* "allure-history/${{ github.run_number }}/"
-          else
-            echo "Allure report not found at target/site/allure-maven-plugin"
-          fi
-
-          # swagger-coverage generates HTML in repo root by default
-          if [ -f swagger-coverage-report.html ]; then
-            cp swagger-coverage-report.html allure-history/swagger-coverage-report.html
-            cp swagger-coverage-report.html "allure-history/${{ github.run_number }}/swagger-coverage-report.html"
-          fi
-
-          echo "Allure latest: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          echo "Allure this run: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/"
-          {
-            echo "Allure (latest): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-            echo "Allure (this run): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.run_number }}/"
-          } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v3
+      # --- prepare gh-pages ---
+      - name: Prepare reports
         if: always()
+        run: |
+          RUN=${{ github.run_number }}
+
+          mkdir -p pages-publish/test-report/$RUN/allure-report
+          mkdir -p pages-publish/test-report/$RUN/swagger-coverage
+
+          cp -r allure-history/* pages-publish/test-report/$RUN/allure-report/ 2>/dev/null || true
+          cp swagger-coverage-report.html pages-publish/test-report/$RUN/swagger-coverage/ 2>/dev/null || true
+          cp swagger-coverage-results.json pages-publish/test-report/$RUN/swagger-coverage/ 2>/dev/null || true
+
+      # --- index ---
+      - name: Create index
+        if: always()
+        run: |
+          mkdir -p pages-publish
+          echo "<h1>Reports</h1>" > pages-publish/index.html
+
+          for d in pages-publish/test-report/*; do
+            run=$(basename $d)
+            echo "<p>Run $run:
+              <a href=\"test-report/$run/allure-report/index.html\">Allure</a> |
+              <a href=\"test-report/$run/swagger-coverage/swagger-coverage-report.html\">Swagger</a>
+            </p>" >> pages-publish/index.html
+          done
+
+      # --- publish ---
+      - name: Publish to gh-pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
+          publish_dir: pages-publish
 
+      # --- cleanup ---
       - name: Shutdown infra
         if: always()
         run: docker compose -f infra/docker-compose.yml down
