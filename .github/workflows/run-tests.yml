@@ -122,6 +122,12 @@ jobs:
             exit 0
           fi
           chmod +x "$SC_BIN" 2>/dev/null || true
+          # If there are no coverage outputs, swagger-coverage may crash with NPE.
+          if ! find target/swagger-coverage-output -type f -maxdepth 2 | grep -q .; then
+            echo "No swagger-coverage outputs in target/swagger-coverage-output; skipping."
+            exit 0
+          fi
+
           "$SC_BIN" \
             -s http://localhost:4111/v3/api-docs \
             -i target/swagger-coverage-output
@@ -153,7 +159,12 @@ jobs:
             cp -r "${LATEST}allure-report/history/"* target/allure-results/history/ 2>/dev/null || true
           fi
 
-          mvn -B allure:report -Dallure.results.directory=target/allure-results
+          # allure-maven by default reads from ./allure-results. Our tests write to target/allure-results.
+          rm -rf allure-results
+          mkdir -p allure-results
+          cp -r target/allure-results/* allure-results/ 2>/dev/null || true
+
+          mvn -B allure:report
 
           rm -rf allure-history
           mkdir -p allure-history
