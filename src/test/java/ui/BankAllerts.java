@@ -1,7 +1,7 @@
 package ui;
 
 import lombok.Getter;
-// ч
+
 @Getter
 public enum BankAllerts {
     USER_CREATED_SUCCESSFULLY("User created successfully!"),
