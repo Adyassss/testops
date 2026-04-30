@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
-      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,38 +331,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00018" summary="Fixed middle tests">
-      <option name="closed" value="true" />
-      <created>1770783577266</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1770783577266</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Fixed middle tests">
-      <option name="closed" value="true" />
-      <created>1770783733509</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1770783733509</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Стабилизируем тесты">
-      <option name="closed" value="true" />
-      <created>1771296099909</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1771296099909</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Первый пайплайн">
-      <option name="closed" value="true" />
-      <created>1777000332695</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1777000332695</updated>
     </task>
     <task id="LOCAL-00022" summary="Второй пайплайн">
       <option name="closed" value="true" />
@@ -726,7 +692,39 @@
       <option name="project" value="LOCAL" />
       <updated>1777541362375</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541752018</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541752019</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541795601</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541795605</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541911414</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541911415</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777541959521</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1777541959521</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

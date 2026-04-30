@@ -126,37 +126,23 @@ jobs:
 
       - name: Run Swagger coverage
         if: always()
-        shell: bash
         run: |
-          set -euo pipefail
-
-          mkdir -p swagger-coverage-output
-
-          echo "=== swagger-coverage-output BEFORE ==="
-          ls -la swagger-coverage-output || true
-
-          rm -f swagger-coverage-report.html swagger-coverage-results.json || true
-
-          if [ ! -f swagger-coverage-commandline.jar ]; then
-            echo "Swagger Coverage CLI jar not found, skipping."
-            exit 0
-          fi
-
-          java -cp swagger-coverage-commandline.jar \
-            com.github.viclovsky.swagger.coverage.commandline.Main \
-            -s http://localhost:4111/v3/api-docs \
-            -i swagger-coverage-output \
-            -o swagger-coverage-report.html \
-            -j swagger-coverage-results.json || true
-
-          echo "=== AFTER ==="
-          ls -la | grep swagger || true
-
-          if [ -f swagger-coverage-report.html ]; then
-            echo "✅ Swagger report generated"
-          else
-            echo "❌ Swagger report NOT generated"
-          fi
+            rm -f swagger-coverage-report.html swagger-coverage-results.json
+            if [ ! -d "swagger-coverage-output" ]; then
+              echo "ERROR: swagger-coverage-output directory not found"
+              exit 1
+            fi
+            SC_BIN=$(find . -maxdepth 4 -type f -name "swagger-coverage-commandline" ! -path "./swagger-coverage-output/*" | head -1)
+            if [ -z "$SC_BIN" ]; then
+              echo "ERROR: swagger-coverage-commandline binary not found"
+              exit 1
+            fi
+            chmod +x "$SC_BIN" 2>/dev/null || true
+            "$SC_BIN" -s http://localhost:4111/v3/api-docs -i swagger-coverage-output
+            if [ ! -f swagger-coverage-report.html ] || [ ! -f swagger-coverage-results.json ]; then
+              echo "ERROR: Swagger Coverage report files were not generated"
+              exit 1
+            fi
 
       - name: Push dockerHub
         run: bash ./push-tests.sh
