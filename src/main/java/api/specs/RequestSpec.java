@@ -20,15 +20,14 @@ public class RequestSpec {
     public static RequestSpecBuilder defaultRequest (){
         Filter swaggerCoverage = SwaggerCoverageFilter.maybeCreate();
         return new RequestSpecBuilder()
-                .setBaseUri(Config.getProperty("server") + Config.getProperty("apiVersion"))
                 .setContentType(ContentType.JSON)
                 .setAccept(ContentType.JSON)
-                .addFilters(swaggerCoverage == null
-                        ? List.of(new RequestLoggingFilter(), new ResponseLoggingFilter())
-                        : List.of(swaggerCoverage, new RequestLoggingFilter(), new ResponseLoggingFilter()));
-    }
-    public static RequestSpecification unauthSpec() {
-        return defaultRequest().build();
+                .addFilters(List.of(
+                        new RequestLoggingFilter(),
+                        new ResponseLoggingFilter(),
+                        new SwaggerCoverageRestAssured(),
+                        new AllureRestAssured()))
+                .setBaseUri(Config.getProperty("apiBaseUrl"));
     }
 
     public static RequestSpecification adminRequest(){
