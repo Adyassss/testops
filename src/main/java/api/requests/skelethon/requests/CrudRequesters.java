@@ -8,7 +8,7 @@ import api.requests.skelethon.Endpoint;
 import api.requests.skelethon.HttpRequest;
 import api.requests.skelethon.interfaces.CrudEndpointInterface;
 import static io.restassured.RestAssured.given;
-//т
+
 public class CrudRequesters extends HttpRequest implements CrudEndpointInterface {
     public CrudRequesters(RequestSpecification requestSpecification, Endpoint endpoint, ResponseSpecification responseSpecification) {
         super(requestSpecification, endpoint, responseSpecification);

@@ -3,6 +3,8 @@ import api.configs.Config;
 import api.models.LoginUserRequest;
 import api.requests.skelethon.Endpoint;
 import api.requests.skelethon.requests.CrudRequesters;
+import com.github.viclovsky.swagger.coverage.SwaggerCoverageRestAssured;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -21,7 +23,11 @@ public class RequestSpec {
                 .setBaseUri(Config.getProperty("server") + Config.getProperty("apiVersion"))
                 .setContentType(ContentType.JSON)
                 .setAccept(ContentType.JSON)
-                .addFilters(List.of(new RequestLoggingFilter(), new ResponseLoggingFilter()));
+                .addFilters(List.of(
+                        new RequestLoggingFilter(),
+                        new ResponseLoggingFilter(),
+                        new SwaggerCoverageRestAssured(),
+                        new AllureRestAssured()));
     }
     public static RequestSpecification unauthSpec() {
         return defaultRequest().build();
@@ -75,5 +81,4 @@ public class RequestSpec {
         return userAuthHeader;
     }
     }
-
 

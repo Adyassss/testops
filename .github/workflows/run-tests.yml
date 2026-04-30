@@ -129,21 +129,21 @@ jobs:
         run: |
           set -euo pipefail
           rm -f swagger-coverage-report.html swagger-coverage-results.json || true
-          mkdir -p target/swagger-coverage-output
+          mkdir -p swagger-coverage-output
 
           if [ ! -f swagger-coverage-commandline.jar ]; then
             echo "Swagger Coverage CLI jar not found, skipping."
             exit 0
           fi
           # If there are no coverage outputs, swagger-coverage may crash.
-          if ! find target/swagger-coverage-output -type f -maxdepth 2 | grep -q .; then
-            echo "No swagger-coverage outputs in target/swagger-coverage-output; skipping."
+          if ! find swagger-coverage-output -type f -maxdepth 2 | grep -q .; then
+            echo "No swagger-coverage outputs in swagger-coverage-output; skipping."
             exit 0
           fi
 
           java -jar swagger-coverage-commandline.jar \
             -s http://localhost:4111/v3/api-docs \
-            -i target/swagger-coverage-output || true
+            -i swagger-coverage-output || true
 
       - name: Dump surefire reports on failure
         if: failure()
