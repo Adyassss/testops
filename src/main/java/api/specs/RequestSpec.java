@@ -20,7 +20,7 @@ public class RequestSpec {
     @SuppressWarnings("null")
     public static RequestSpecBuilder defaultRequest (){
         return new RequestSpecBuilder()
-                .setBaseUri(Config.getProperty("server") )
+                .setBaseUri(Config.getProperty("server") + Config.getProperty("apiVersion"))
                 .setContentType(ContentType.JSON)
                 .setAccept(ContentType.JSON)
                 .addFilters(List.of(
