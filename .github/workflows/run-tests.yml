@@ -70,6 +70,8 @@ jobs:
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
+          SWAGGER_COVERAGE_ENABLED: "true"
+          SWAGGER_COVERAGE_OUTPUT_DIR: target/swagger-coverage-output
         run: mvn -B test -P api -Dallure.results.directory=target/allure-results
 
       - name: Run UI tests
@@ -77,35 +79,23 @@ jobs:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://nginx
           SELENIUM_REMOTE_URL: http://localhost:4444/wd/hub
+          SWAGGER_COVERAGE_ENABLED: "true"
+          SWAGGER_COVERAGE_OUTPUT_DIR: target/swagger-coverage-output
         run: mvn -B test -P ui -Dallure.results.directory=target/allure-results
 
       - name: Install jq
         if: always()
         run: sudo apt-get update -qq && sudo apt-get install -y -qq jq
 
-      - name: Download Swagger Coverage CLI
+      - name: Download Swagger Coverage CLI (jar)
         if: always()
         shell: bash
         run: |
           set -euo pipefail
-          # GitHub sometimes returns 404 for missing assets; determine a working URL from the API.
           ver="1.5.0"
-          api="https://api.github.com/repos/viclovsky/swagger-coverage/releases/tags/${ver}"
-          echo "Fetching release metadata: ${api}"
-
-          rm -rf swagger-coverage-cli swagger.zip release.json
-          mkdir -p swagger-coverage-cli
-
-          curl -fsSL -o release.json "$api"
-          url="$(jq -r '.assets[] | select(.name | test("swagger-coverage-commandline.*\\.zip$")) | .browser_download_url' release.json | head -n 1)"
-          if [ -z "${url:-}" ] || [ "$url" = "null" ]; then
-            echo "No swagger-coverage-commandline zip asset found for ${ver}; skipping."
-            exit 0
-          fi
-
-          echo "Downloading: $url"
-          curl -fsSL -o swagger.zip "$url"
-          unzip -q swagger.zip -d swagger-coverage-cli
+          url="https://repo1.maven.org/maven2/com/github/viclovsky/swagger-coverage-commandline/${ver}/swagger-coverage-commandline-${ver}.jar"
+          echo "Downloading swagger-coverage-commandline jar: $url"
+          curl -fsSL -o swagger-coverage-commandline.jar "$url"
 
       - name: Run Swagger coverage
         if: always()
@@ -114,19 +104,16 @@ jobs:
           set -euo pipefail
           rm -f swagger-coverage-report.html swagger-coverage-results.json || true
           mkdir -p target/swagger-coverage-output
-          SC_BIN="$(find swagger-coverage-cli -type f -name 'swagger-coverage-commandline' | head -n 1 || true)"
-          if [ -z "${SC_BIN:-}" ]; then
-            echo "Swagger Coverage CLI not found (skipping)."
+          if [ ! -f swagger-coverage-commandline.jar ]; then
+            echo "swagger-coverage-commandline.jar not found (skipping)."
             exit 0
           fi
-          chmod +x "$SC_BIN" 2>/dev/null || true
-          # If there are no coverage outputs, swagger-coverage may crash with NPE.
           if ! find target/swagger-coverage-output -type f -maxdepth 2 | grep -q .; then
             echo "No swagger-coverage outputs in target/swagger-coverage-output; skipping."
             exit 0
           fi
 
-          "$SC_BIN" \
+          java -jar swagger-coverage-commandline.jar \
             -s http://localhost:4111/v3/api-docs \
             -i target/swagger-coverage-output
 
