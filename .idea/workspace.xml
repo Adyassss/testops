@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="последний пайплайн">
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/models/AdminCanCreateUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/models/AdminCanCreateUserRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +18,18 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,13 +53,6 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -141,6 +136,7 @@
     "JUnit.UserCanDepositUI.executor": "Run",
     "JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor": "Run",
+    "JUnit.UserCanDepositUiTest.executor": "Run",
     "JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor": "Run",
     "JUnit.UserCanTransfer.userCanTransferMoney.executor": "Run",
@@ -180,9 +176,9 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "I do mind",
-    "git-widget-placeholder": "#1 on docker__compose",
+    "git-widget-placeholder": "docker__compose",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/adya/Downloads/auto-testops",
+    "last_opened_file_path": "/Users/adya/Downloads/auto-testops/target/allure-results",
     "onboarding.tips.debug.path": "/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -191,17 +187,41 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/allure-results" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean test" />
       <command value="mvn -DskipTests=true" />
       <command value="mvn -DskipTests=true surefire-report:report" />
       <command value="mvn test -q -P ${TEST_PROFILE}" />
       <command value="mvn surefire-report:report" />
+      <command value="mvn clean test" />
       <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanTransferUiTest">
+  <component name="RunManager" selected="JUnit.UserCanDepositTest.userCanDeposit">
+    <configuration name="UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nbank-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanChangeNameUiTest" />
+      <option name="METHOD_NAME" value="userChangeNameWithCorrectDataTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserCanChangeUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -217,7 +237,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCanChangeUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -226,25 +246,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCanChangeUsername" />
+      <option name="MAIN_CLASS_NAME" value="api.UserCanDepositTest" />
+      <option name="METHOD_NAME" value="userCanDeposit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCantChangeUsernameWithInvalidData(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ui" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanDepositUiTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,6 +283,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -276,21 +304,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="infra: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="infra/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserCanTransferUiTest" />
+        <item itemvalue="JUnit.UserCanDepositUiTest" />
+        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit" />
         <item itemvalue="JUnit.UserCanChangeUsernameTest" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCanChangeUsername" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" />
-        <item itemvalue="Docker.infra: Compose Deployment" />
+        <item itemvalue="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" />
       </list>
     </recent_temporary>
   </component>
@@ -313,54 +333,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00001" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767841006337</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1767841006337</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767841136261</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1767841136261</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767845457576</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1767845457576</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Api test cases">
-      <option name="closed" value="true" />
-      <created>1767845867973</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1767845867973</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add auto tests">
-      <option name="closed" value="true" />
-      <created>1767954506610</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1767954506611</updated>
-    </task>
-    <task id="LOCAL-00006" summary="I’ve fixed the mistakes.">
-      <option name="closed" value="true" />
-      <created>1768311028309</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1768311028309</updated>
     </task>
     <task id="LOCAL-00007" summary="I’ve fixed the mistakes.">
       <option name="closed" value="true" />
@@ -562,7 +534,199 @@
       <option name="project" value="LOCAL" />
       <updated>1777009095011</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="последний пайплайн">
+      <option name="closed" value="true" />
+      <created>1777053563428</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777053563428</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777169401172</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1777169401172</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777171878199</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1777171878199</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777172143945</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1777172143945</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777172346264</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1777172346265</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777172620680</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1777172620680</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777172909405</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1777172909406</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174239537</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174239537</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174740439</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174740439</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777174844791</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1777174844791</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777175276988</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1777175276988</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777175728489</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1777175728489</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777176543771</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1777176543771</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777178201830</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1777178201830</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777179894974</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1777179894974</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777294437092</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1777294437092</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777522555053</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1777522555055</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777523725680</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1777523725680</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777525059399</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1777525059447</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777525682899</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1777525682901</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777526420030</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1777526420030</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777527570389</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1777527570394</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777532056206</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1777532056207</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777532657757</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1777532657758</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +762,8 @@
     <MESSAGE value="девятый пайплайн" />
     <MESSAGE value="десятый пайплайн" />
     <MESSAGE value="последний пайплайн" />
-    <option name="LAST_COMMIT_MESSAGE" value="последний пайплайн" />
+    <MESSAGE value="Allure and swagger coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allure and swagger coverage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
