@@ -80,7 +80,6 @@
             <groupId>com.github.viclovsky</groupId>
             <artifactId>swagger-coverage-rest-assured</artifactId>
             <version>1.5.0</version>
-            <scope>test</scope>
             <exclusions>
                 <exclusion>
                     <groupId>io.rest-assured</groupId>
@@ -93,21 +92,18 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
             <version>${allure.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-selenide</artifactId>
             <version>${allure.version}</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
