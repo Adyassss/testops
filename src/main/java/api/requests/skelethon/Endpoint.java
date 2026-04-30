@@ -3,7 +3,7 @@ package api.requests.skelethon;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import api.models.*;
-
+//ф
 @Getter
 @AllArgsConstructor
 public enum Endpoint {
