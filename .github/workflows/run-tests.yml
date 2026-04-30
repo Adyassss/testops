@@ -159,10 +159,25 @@ jobs:
             cp -r "${LATEST}allure-report/history/"* target/allure-results/history/ 2>/dev/null || true
           fi
 
-          # allure-maven by default reads from ./allure-results. Our tests write to target/allure-results.
-          rm -rf allure-results
-          mkdir -p allure-results
-          cp -r target/allure-results/* allure-results/ 2>/dev/null || true
+          echo "=== Allure results diagnostics ==="
+          echo "PWD=$(pwd)"
+          echo "--- target/allure-results ---"
+          ls -la target/allure-results 2>/dev/null || true
+          echo "result.json count:"
+          find target/allure-results -maxdepth 1 -name '*-result.json' 2>/dev/null | wc -l || true
+          echo "--- ./allure-results ---"
+          ls -la allure-results 2>/dev/null || true
+          echo "result.json count:"
+          find allure-results -maxdepth 1 -name '*-result.json' 2>/dev/null | wc -l || true
+
+          # Make sure the directory configured in pom.xml has results.
+          if [ -d allure-results ] && [ ! -d target/allure-results ]; then
+            mkdir -p target/allure-results
+          fi
+          if [ -d allure-results ] && [ -d target/allure-results ]; then
+            # If tests wrote into ./allure-results, merge into target/ so allure-maven can see it.
+            cp -r allure-results/* target/allure-results/ 2>/dev/null || true
+          fi
 
           mvn -B allure:report
 
