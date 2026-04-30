@@ -115,6 +115,7 @@ jobs:
         run: |
           set -euo pipefail
           rm -f swagger-coverage-report.html swagger-coverage-results.json || true
+          mkdir -p target/swagger-coverage-output
           SC_BIN="$(find swagger-coverage-cli -type f -name 'swagger-coverage-commandline' | head -n 1 || true)"
           if [ -z "${SC_BIN:-}" ]; then
             echo "Swagger Coverage CLI not found (skipping)."
