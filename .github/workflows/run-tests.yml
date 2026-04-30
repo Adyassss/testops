@@ -88,25 +88,23 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          download() {
-            local url="$1"
-            echo "Trying: $url"
-            curl -fsSL -o swagger.zip "$url"
-          }
+          # GitHub sometimes returns 404 for missing assets; determine a working URL from the API.
+          ver="1.5.0"
+          api="https://api.github.com/repos/viclovsky/swagger-coverage/releases/tags/${ver}"
+          echo "Fetching release metadata: ${api}"
 
-          # Different releases used different asset names; try a few.
-          if ! (
-            download "https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-commandline-1.5.0.zip" || \
-            download "https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-1.5.0.zip" || \
-            download "https://github.com/viclovsky/swagger-coverage/releases/download/1.5.1/swagger-coverage-commandline-1.5.1.zip" || \
-            download "https://github.com/viclovsky/swagger-coverage/releases/download/1.6.0/swagger-coverage-commandline-1.6.0.zip"
-          ); then
-            echo "Swagger Coverage download failed (404?). Skipping."
+          rm -rf swagger-coverage-cli swagger.zip release.json
+          mkdir -p swagger-coverage-cli
+
+          curl -fsSL -o release.json "$api"
+          url="$(jq -r '.assets[] | select(.name | test("swagger-coverage-commandline.*\\.zip$")) | .browser_download_url' release.json | head -n 1)"
+          if [ -z "${url:-}" ] || [ "$url" = "null" ]; then
+            echo "No swagger-coverage-commandline zip asset found for ${ver}; skipping."
             exit 0
           fi
 
-          rm -rf swagger-coverage-cli
-          mkdir -p swagger-coverage-cli
+          echo "Downloading: $url"
+          curl -fsSL -o swagger.zip "$url"
           unzip -q swagger.zip -d swagger-coverage-cli
 
       - name: Run Swagger coverage
