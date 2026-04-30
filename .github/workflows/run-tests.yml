@@ -73,6 +73,7 @@ jobs:
         env:
           NBANK_SERVER: http://localhost:4111
           NBANK_BASE_URL: http://localhost
+          SWAGGER_COVERAGE_OUTPUT: swagger-coverage-output
         run: mvn -B test -P api -Dallure.results.directory=target/allure-results
 
       - name: Run UI tests

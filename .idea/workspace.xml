@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/run-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/Endpoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,22 +334,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00015" summary="UI tests">
-      <option name="closed" value="true" />
-      <created>1769431684996</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1769431684996</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Senior tests">
-      <option name="closed" value="true" />
-      <created>1769504873016</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1769504873016</updated>
     </task>
     <task id="LOCAL-00017" summary="Senior tests">
       <option name="closed" value="true" />
@@ -727,7 +711,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777538984917</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777539670677</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1777539670678</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777539722802</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1777539722802</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
