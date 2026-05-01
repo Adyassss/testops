@@ -69,6 +69,11 @@ jobs:
           wait_http "http://127.0.0.1/" "nginx :80"
           wait_http "http://127.0.0.1:4444/wd/hub/status" "selenium :4444"
 
+      - name: Download Swagger Coverage
+        run: |
+          curl -sL -o swagger-coverage.zip https://github.com/viclovsky/swagger-coverage/releases/download/1.5.0/swagger-coverage-1.5.0.zip
+           unzip -o swagger-coverage.zip
+
       - name: Run API tests
         env:
           NBANK_SERVER: http://localhost:4111
@@ -102,7 +107,6 @@ jobs:
         if: always()
         shell: bash
         run: |
-          set -euo pipefail
           mkdir -p target/allure-results/history
 
           LATEST=$(ls -d gh-pages/test-report/*/ 2>/dev/null | sort -t'/' -k3 -nr | head -1 || true)
@@ -111,18 +115,6 @@ jobs:
           fi
 
           mvn -B allure:report
-
-      - name: Download Swagger Coverage CLI (jar)
-        if: always()
-        shell: bash
-        run: |
-          set -euo pipefail
-          # Use Maven to fetch the jar (more stable than GitHub release assets).
-          ver="1.5.0"
-          mvn -q -DskipTests dependency:copy \
-            -Dartifact=com.github.viclovsky:swagger-coverage-commandline:${ver}:jar \
-            -DoutputDirectory=. \
-            -Dmdep.stripVersion=true || true
 
       - name: Run Swagger coverage
         if: always()

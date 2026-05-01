@@ -22,7 +22,7 @@ import static com.codeborne.selenide.Selenide.switchTo;
 @ExtendWith(BrowserMatchExtension.class)
 @ExtendWith(AdminSessionExtension.class)
 public class BaseUITest extends BaseTest {
-//ф
+
     @BeforeAll
     public static void setupSelenoid() {
         Configuration.baseUrl = Config.getProperty("baseUrl");
