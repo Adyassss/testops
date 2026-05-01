@@ -324,30 +324,6 @@
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
     </task>
-    <task id="LOCAL-00023" summary="Второй пайплайн">
-      <option name="closed" value="true" />
-      <created>1777002295829</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1777002295829</updated>
-    </task>
-    <task id="LOCAL-00024" summary="пятый пайплайн">
-      <option name="closed" value="true" />
-      <created>1777002912390</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1777002912391</updated>
-    </task>
-    <task id="LOCAL-00025" summary="шестой пайплайн">
-      <option name="closed" value="true" />
-      <created>1777004600360</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1777004600360</updated>
-    </task>
     <task id="LOCAL-00026" summary="седьмой пайплайн">
       <option name="closed" value="true" />
       <created>1777006496970</created>
@@ -716,7 +692,31 @@
       <option name="project" value="LOCAL" />
       <updated>1777542245307</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777600973549</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1777600973550</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777601044389</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1777601044389</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777601241578</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1777601241578</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
