@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/CrudRequesters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/requests/CrudRequesters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/specs/RequestSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/skelethon/Endpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +209,7 @@
       <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanDepositTest.userCanDeposit">
+  <component name="RunManager" selected="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest">
     <configuration name="UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -241,7 +241,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanChangeUsernameTest.userCanChangeUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nbank-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
+      <option name="METHOD_NAME" value="userCanChangeUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCanDepositTest.userCanDeposit (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="api.*" />
@@ -256,7 +273,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanDepositUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositUiTest.userDepositWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -266,22 +283,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
       <option name="MAIN_CLASS_NAME" value="ui.UserCanDepositUiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCanTransferUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.UserCanTransferUiTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="userDepositWithCorrectDataTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,11 +314,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserCanTransferUiTest" />
-        <item itemvalue="JUnit.UserCanDepositUiTest" />
-        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest" />
         <item itemvalue="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" />
+        <item itemvalue="JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest" />
+        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit (1)" />
+        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCanChangeUsername" />
+        <item itemvalue="JUnit.UserCanChangeUsernameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -338,22 +341,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00029" summary="десятый пайплайн">
-      <option name="closed" value="true" />
-      <created>1777008182105</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1777008182105</updated>
-    </task>
-    <task id="LOCAL-00030" summary="последний пайплайн">
-      <option name="closed" value="true" />
-      <created>1777009022322</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1777009022323</updated>
     </task>
     <task id="LOCAL-00031" summary="последний пайплайн">
       <option name="closed" value="true" />
@@ -731,7 +718,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777604485145</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777605094500</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1777605094500</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777605315749</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1777605315749</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

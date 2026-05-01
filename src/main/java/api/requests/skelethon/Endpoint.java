@@ -8,12 +8,12 @@ import api.models.*;
 @AllArgsConstructor
 public enum Endpoint {
     ADMIN_USER(
-            "admin/users",
+            "/admin/users",
             AdminCanCreateUserRequest.class,
             AdminCanCreateUserResponse.class
     ),
     USER_CREATE_ACC(
-            "accounts",
+            "/accounts",
             CreateUserRequestModel.class,
             CreateUserResponseModel.class
     ),
@@ -23,22 +23,22 @@ public enum Endpoint {
             LoginUserRequest.class
     ),
     DEPOSIT_USER(
-                    "accounts/deposit",
+                    "/accounts/deposit",
                     UserDepositModelRequest.class,
                     UserProfileModelResponse.class
     ),
     TRANSFER_USER(
-            "accounts/transfer",
+            "/accounts/transfer",
             UserDepositModelRequest.class,
             UserProfileModelResponse.class
     ),
     CHANGE_NAME(
-            "customer/profile",
+            "/customer/profile",
             UserChangeNameResponseModel.class,
             UserChangeNameResponseModel.class
     ),
     USER_PROFILE(
-            "customer/profile",
+            "/customer/profile",
             BaseModel.class,
             UserProfileResponseModel.class
     );
