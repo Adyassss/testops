@@ -80,7 +80,7 @@ public class UserCanTransferTest {
 
     @MethodSource("api.generators.RandomData#NegativeAmount")
     @ParameterizedTest
-    public void userCantTransferMoneyUnauth(float amount) {
+    public void userCantTransferMoneyUnAuth(float amount) {
 
         String userToken = AdminSteps.createToken();
 

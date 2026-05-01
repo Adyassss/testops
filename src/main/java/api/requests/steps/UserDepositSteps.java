@@ -1,5 +1,6 @@
 package api.requests.steps;
 
+import api.generators.RandomData;
 import io.restassured.response.ValidatableResponse;
 import api.models.UserDepositModelRequest;
 import api.requests.skelethon.Endpoint;
@@ -26,6 +27,26 @@ public class UserDepositSteps extends BaseSteps {
         return new CrudRequesters(RequestSpec.userRequest(userToken),
         Endpoint.DEPOSIT_USER,
         ResponseSpec.badRequest())
+        .post(UserDepositModelRequest.builder()
+                .id(senderId)
+                .balance(amount)
+                .build());
+    }
+
+    public static ValidatableResponse depositMoneyWithUnAuth( int senderId, float amount){
+        return new CrudRequesters(RequestSpec.userRequest(RandomData.getUsername()),
+        Endpoint.DEPOSIT_USER,
+        ResponseSpec.unauthorized())
+        .post(UserDepositModelRequest.builder()
+                .id(senderId)
+                .balance(amount)
+                .build());
+    }
+
+    public static ValidatableResponse depositMoneyWithAccess(String userToken, int senderId, float amount){
+        return new CrudRequesters(RequestSpec.userRequest(userToken),
+        Endpoint.DEPOSIT_USER,
+        ResponseSpec.notAccess())
         .post(UserDepositModelRequest.builder()
                 .id(senderId)
                 .balance(amount)

@@ -40,4 +40,19 @@ public class UserCanChangeUsernameTest {
 
         ModelAssertions.assertThatModels(nameBefore, nameAfter).match();
     }
+
+    @ParameterizedTest
+    @MethodSource("api.generators.RandomData#NegativeNames")
+    public void userCantChangeUsernameUnAuth(String invalidName) {
+        String userToken = AdminSteps.createToken();
+
+        String nameBefore = UserProfileSteps.getUserProfileName(userToken);
+
+        ChangeNameSteps.changeNameWithUnAuth(RandomData.getUsername(), invalidName);
+
+        String nameAfter = UserProfileSteps.getUserProfileName(userToken);
+
+        ModelAssertions.assertThatModels(nameBefore, nameAfter).match();
+    }
+
 }

@@ -28,4 +28,12 @@ public class ChangeNameSteps extends BaseSteps {
             .put(UserChangeNameRequestModel.builder().name(name).build());
     }
 
+    public static ValidatableResponse changeNameWithUnAuth(String userToken, String name) {
+        return new CrudRequesters(
+            RequestSpec.userRequest(userToken),
+            Endpoint.CHANGE_NAME,
+            ResponseSpec.unauthorized())
+            .put(UserChangeNameRequestModel.builder().name(name).build());
+    }
+
 }
