@@ -77,4 +77,25 @@ public class UserCanTransferTest {
 
         ModelAssertions.assertThatModels(balanceBefore, balanceAfter).match();
     }
+
+    @MethodSource("api.generators.RandomData#NegativeAmount")
+    @ParameterizedTest
+    public void userCantTransferMoneyUnauth(float amount) {
+
+        String userToken = AdminSteps.createToken();
+
+        int randomId = RandomData.randomInt();
+
+        int senderId = UserProfileSteps.createUserProfileId(userToken);
+
+        float balanceBefore = UserProfileSteps.getUserProfileAccountBalance(userToken, senderId);
+
+        int receiverId = UserProfileSteps.createUserProfileId(userToken);
+
+        UserTransferSteps.transferMoneyWithUnauth(randomId, receiverId, amount);
+
+        float balanceAfter = UserProfileSteps.getUserProfileAccountBalance(userToken, senderId);
+
+        ModelAssertions.assertThatModels(balanceBefore, balanceAfter).match();
+    }
 }

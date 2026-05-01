@@ -1,5 +1,6 @@
 package api.specs;
 import api.configs.Config;
+import api.generators.RandomData;
 import api.models.LoginUserRequest;
 import api.requests.skelethon.Endpoint;
 import api.requests.skelethon.requests.CrudRequesters;
@@ -42,6 +43,12 @@ public class RequestSpec {
     public static RequestSpecification userRequest(String token){
         return defaultRequest()
                 .addHeader("Authorization",token)
+                .build();
+    }
+
+    public static RequestSpecification userRequest(){
+        return defaultRequest()
+                .addHeader("Authorization", RandomData.getUsername())
                 .build();
     }
 
