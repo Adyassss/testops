@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/run-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/run-tests.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/models/LoginUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/models/LoginUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +39,12 @@
     &quot;assignee&quot;: &quot;Adyassss&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:Adyassss/testops.git&quot;,
-    &quot;accountId&quot;: &quot;fde6ad36-4354-41c4-a6ff-a12c6c5f9e74&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Adyassss/testops.git",
+    "accountId": "fde6ad36-4354-41c4-a6ff-a12c6c5f9e74"
   }
-}</component>
+}]]></component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
@@ -62,129 +63,129 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.infra: Compose Deployment.executor": "Run",
-    "HTTP Request.iteration_1 | #1.executor": "Run",
-    "HTTP Request.iteration_1 | #4.executor": "Run",
-    "HTTP Request.iteration_1 | Create user by admin.executor": "Run",
-    "HTTP Request.iteration_1 | Deposit money.executor": "Run",
-    "HTTP Request.iteration_1 | Get Auth token.executor": "Run",
-    "HTTP Request.iteration_1 | Login with user parametrs Authorization: Basic YWR5YTE5OTc6dmVyeXNUUm9uZ1Bhc3N3b3JkMzMk.executor": "Run",
-    "HTTP Request.iteration_1 | Login with user parametrs.executor": "Run",
-    "HTTP Request.iteration_1 | Negative case: Deposit money with a not valid user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | Negative case: Deposit money without user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | Transfer money with role USER.executor": "Run",
-    "HTTP Request.iteration_1 | Transfer money.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Negative case: Update username with role USER and not correct token.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Positive case: Deposit money with a valid user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №1 Positive case: Update username with role USER.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Transfer money with not correct token.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Transfer money without.executor": "Run",
-    "HTTP Request.iteration_1 | №2 Negative case: Update username with role USER and without token.executor": "Run",
-    "HTTP Request.iteration_1 | №3 Negative case: Deposit money without user token and correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and not correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid receiverAccountId.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid.executor": "Run",
-    "HTTP Request.iteration_1 | №4 Negative case: Update username with role USER null.executor": "Run",
-    "HTTP Request.iteration_1 | №5 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №6 Negative case: Deposit money with a valid user token and without amount.executor": "Run",
-    "HTTP Request.iteration_1 | №6 Negative case: Transfer money with not correct amount.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Transfer money with amount not have user.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Transfer money with zero amount.executor": "Run",
-    "HTTP Request.iteration_1 | №7 Negative case: Update username with role USER where username have special simbol.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero amount.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero sender.executor": "Run",
-    "HTTP Request.iteration_1 | №8 Negative case: Update username with role USER where username have spaces.executor": "Run",
-    "HTTP Request.iteration_1 | №9 Negative case: Transfer money with zero receiverAccountId.executor": "Run",
-    "JUnit.LoginUserTest.adminCanLoginWithCorrectDataTest.executor": "Debug",
-    "JUnit.UserCanChangeNameUI.UserChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.UserChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.executor": "Run",
-    "JUnit.UserCanChangeNameUI.userChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUI.userChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeNameUiTest.userChangeNameWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.adminCreateUser.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCanChangeUsername (1).executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCanChangeUsername.executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData.executor": "Run",
-    "JUnit.UserCanDeposit.authUser.executor": "Run",
-    "JUnit.UserCanDeposit.body.executor": "Run",
-    "JUnit.UserCanDeposit.userCanDeposit (1).executor": "Run",
-    "JUnit.UserCanDeposit.userCanDeposit.executor": "Run",
-    "JUnit.UserCanDeposit.userCantDepositWithInvalidData.executor": "Run",
-    "JUnit.UserCanDepositTest.authUser.executor": "Run",
-    "JUnit.UserCanDepositTest.executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (1).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (2).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (3).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (4).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit (5).executor": "Run",
-    "JUnit.UserCanDepositTest.userCanDeposit.executor": "Run",
-    "JUnit.UserCanDepositTest.userCantDepositWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanDepositTest.userCantDepositWithInvalidData.executor": "Run",
-    "JUnit.UserCanDepositUI.UserDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.UserDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.executor": "Run",
-    "JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransfer.userCanTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (2).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney (3).executor": "Run",
-    "JUnit.UserCanTransferTest.userCanTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoney (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoney.executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (1).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (2).executor": "Run",
-    "JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData.executor": "Run",
-    "JUnit.UserCanTransferUI.UserDepositWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.UserTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.UserTransferWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.executor": "Run",
-    "JUnit.UserCanTransferUI.userTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUI.userTransferWithNotCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.userTransferWithCorrectDataTest.executor": "Run",
-    "JUnit.UserCanTransferUiTest.userTransferWithNotCorrectDataTest.executor": "Run",
-    "Maven.nbank-tests [-B,test,-P,api].executor": "Run",
-    "Maven.nbank-tests [-DskipTests=true...].executor": "Run",
-    "Maven.nbank-tests [-DskipTests=true].executor": "Run",
-    "Maven.nbank-tests [clean,test].executor": "Run",
-    "Maven.nbank-tests [clean].executor": "Run",
-    "Maven.nbank-tests [package].executor": "Run",
-    "Maven.nbank-tests [surefire-report:report].executor": "Run",
-    "Maven.nbank-tests [test,-q,-P,${TEST_PROFILE}].executor": "Run",
-    "Maven.nbank-tests [test].executor": "Run",
-    "Maven.nbank-tests [validate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHELLCHECK.PATH": "I do mind",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/adya/Downloads/auto-testops/target/allure-results",
-    "onboarding.tips.debug.path": "/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.infra: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Create user by admin.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Deposit money.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Get Auth token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Login with user parametrs Authorization: Basic YWR5YTE5OTc6dmVyeXNUUm9uZ1Bhc3N3b3JkMzMk.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Login with user parametrs.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Negative case: Deposit money with a not valid user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Negative case: Deposit money without user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Transfer money with role USER.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | Transfer money.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Negative case: Update username with role USER and not correct token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Positive case: Deposit money with a valid user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №1 Positive case: Update username with role USER.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Transfer money with not correct token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Transfer money without.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №2 Negative case: Update username with role USER and without token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №3 Negative case: Deposit money without user token and correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and not correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid receiverAccountId.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Transfer money with not correctid.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №4 Negative case: Update username with role USER null.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №5 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №6 Negative case: Deposit money with a valid user token and without amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №6 Negative case: Transfer money with not correct amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Transfer money with amount not have user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Transfer money with zero amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №7 Negative case: Update username with role USER where username have special simbol.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero amount.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Transfer money with zero sender.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №8 Negative case: Update username with role USER where username have spaces.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.iteration_1 | №9 Negative case: Transfer money with zero receiverAccountId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginUserTest.adminCanLoginWithCorrectDataTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserCanChangeNameUI.UserChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.UserChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.userChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUI.userChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeNameUiTest.userChangeNameWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.adminCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCanChangeUsername (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCanChangeUsername.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.authUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.body.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCanDeposit (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCanDeposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDeposit.userCantDepositWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.authUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (4).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit (5).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCanDeposit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCantDepositWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositTest.userCantDepositWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.UserDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.UserDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.userDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUI.userDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanDepositUiTest.userDepositWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransfer.userCanTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCanTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoney (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoney.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferTest.userCantTransferMoneyWithInvalidData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserDepositWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.UserTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.userTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUI.userTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.userTransferWithCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserCanTransferUiTest.userTransferWithNotCorrectDataTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-B,test,-P,api].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-DskipTests=true...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [-DskipTests=true].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [surefire-report:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [test,-q,-P,${TEST_PROFILE}].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.nbank-tests [validate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/adya/Downloads/auto-testops/target/allure-results&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/adya/IdeaProjects/nbank-tests/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/allure-results" />
@@ -203,7 +204,7 @@
       <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanDepositTest.userCanDeposit">
+  <component name="RunManager" selected="JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest">
     <configuration name="UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -235,22 +236,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanDepositTest" />
-      <option name="METHOD_NAME" value="userCanDeposit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserCanDepositUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -266,7 +251,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanTransferUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositUiTest.userDepositWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -275,20 +260,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.UserCanTransferUiTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanDepositUiTest" />
+      <option name="METHOD_NAME" value="userDepositWithCorrectDataTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
@@ -302,12 +279,20 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="infra: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="infra/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserCanTransferUiTest" />
+        <item itemvalue="JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest" />
         <item itemvalue="JUnit.UserCanDepositUiTest" />
-        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit" />
         <item itemvalue="JUnit.UserCanChangeUsernameTest" />
+        <item itemvalue="Docker.infra: Compose Deployment" />
         <item itemvalue="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" />
       </list>
     </recent_temporary>
