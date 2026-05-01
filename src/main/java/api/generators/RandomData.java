@@ -2,6 +2,7 @@ package api.generators;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 public class RandomData {
@@ -32,6 +33,10 @@ public class RandomData {
                 0f,
                 5000.1f
         );
+    }
+
+    public static int randomInt() {
+        return ThreadLocalRandom.current().nextInt(1, 1001);
     }
 
     public static Stream<Float> PositiveAmount() {

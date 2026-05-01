@@ -46,18 +46,6 @@ public class RequestSpec {
     }
 
 
-    public static void authAsUser(LoginUserRequest request) {
-         authToken = given()
-                .spec(defaultRequest().build())
-                .body(request)
-                .post("/auth/login")
-                .then()
-                 .spec(ResponseSpec.ok())
-                .extract()
-                .path("token");
-    }
-
-
     public static String getUserAuthHeader(String username, String password) {
         String userAuthHeader;
             userAuthHeader = new CrudRequesters(

@@ -7,6 +7,7 @@ public class ResponseSpec {
     private static final int SC_CREATED = 201;
     private static final int SC_BAD_REQUEST = 400;
     private static final int SC_UNAUTHORIZED = 401;
+    private static final int SC_NOTACCESS = 403;
 
     public static ResponseSpecBuilder defaultResponse (){
         return new ResponseSpecBuilder();
@@ -33,6 +34,12 @@ public class ResponseSpec {
     public static ResponseSpecification unauthorized (){
         return defaultResponse()
                 .expectStatusCode(SC_UNAUTHORIZED)
+                .build();
+    }
+
+    public static ResponseSpecification notAccess (){
+        return defaultResponse()
+                .expectStatusCode(SC_NOTACCESS)
                 .build();
     }
 }

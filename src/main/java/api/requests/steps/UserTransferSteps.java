@@ -33,4 +33,15 @@ public class UserTransferSteps extends BaseSteps {
                 .amount(amount)
                 .build());
     }
+
+    public static ValidatableResponse transferMoneyWithInvalidAccess(String userToken, int senderId, int receiverId, float amount){
+        return new CrudRequesters(RequestSpec.userRequest(userToken),
+                Endpoint.TRANSFER_USER,
+                ResponseSpec.notAccess())
+                .post(UserCanTransferRequestModel.builder()
+                        .senderAccountId(senderId)
+                        .receiverAccountId(receiverId)
+                        .amount(amount)
+                        .build());
+    }
 }
