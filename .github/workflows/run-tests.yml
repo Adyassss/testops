@@ -2,9 +2,6 @@ name: Run Tests
 
 on:
   push:
-    paths:
-      - "src/**"
-      - "pom.xml"
   workflow_dispatch:
 
 permissions:
@@ -119,22 +116,32 @@ jobs:
       - name: Run Swagger coverage
         if: always()
         run: |
-            rm -f swagger-coverage-report.html swagger-coverage-results.json
-            if [ ! -d "swagger-coverage-output" ]; then
-              echo "ERROR: swagger-coverage-output directory not found"
-              exit 1
-            fi
-            SC_BIN=$(find . -maxdepth 4 -type f -name "swagger-coverage-commandline" ! -path "./swagger-coverage-output/*" | head -1)
-            if [ -z "$SC_BIN" ]; then
-              echo "ERROR: swagger-coverage-commandline binary not found"
-              exit 1
-            fi
-            chmod +x "$SC_BIN" 2>/dev/null || true
-            "$SC_BIN" -s http://localhost:4111/v3/api-docs -i swagger-coverage-output
-            if [ ! -f swagger-coverage-report.html ] || [ ! -f swagger-coverage-results.json ]; then
-              echo "ERROR: Swagger Coverage report files were not generated"
-              exit 1
-            fi
+          set -euo pipefail
+
+          rm -f swagger-coverage-report.html swagger-coverage-results.json
+
+          if [ ! -d "swagger-coverage-output" ]; then
+            echo "ERROR: swagger-coverage-output directory not found"
+            exit 1
+          fi
+
+          SC_BIN="./swagger-coverage-commandline-1.5.0/bin/swagger-coverage-commandline"
+
+          if [ ! -f "$SC_BIN" ]; then
+            echo "ERROR: swagger-coverage-commandline binary not found at $SC_BIN"
+            exit 1
+          fi
+
+          chmod +x "$SC_BIN"
+
+          "$SC_BIN" \
+            -s http://localhost:4111/v3/api-docs \
+            -i swagger-coverage-output
+
+          if [ ! -f swagger-coverage-report.html ] || [ ! -f swagger-coverage-results.json ]; then
+            echo "ERROR: Swagger Coverage report files were not generated"
+            exit 1
+          fi
 
       - name: Push dockerHub
         run: bash ./push-tests.sh
