@@ -1,12 +1,15 @@
 package api.requests.steps;
 
+import api.generators.RandomData;
 import api.models.CreateUserRequestModel;
 import api.models.CreateUserResponseModel;
 import api.models.UserProfileResponseModel;
 import api.requests.skelethon.Endpoint;
+import api.requests.skelethon.requests.CrudRequesters;
 import api.requests.skelethon.requests.ValidatedCrudRequester;
 import api.specs.RequestSpec;
 import api.specs.ResponseSpec;
+import io.restassured.response.ValidatableResponse;
 
 public class UserProfileSteps extends BaseSteps {
     public UserProfileSteps(String username, String password) {
@@ -27,6 +30,15 @@ public class UserProfileSteps extends BaseSteps {
                 .post(CreateUserRequestModel.builder().build())
                 .getId();
     }
+
+    public static ValidatableResponse createUserWithOutToken() {
+        return new CrudRequesters(RequestSpec.userRequest(RandomData.getUsername()),
+                Endpoint.USER_CREATE_ACC,
+                ResponseSpec.unauthorized())
+                .post(CreateUserRequestModel.builder().build());
+
+    }
+
     public static float getUserProfileAccountBalance(String userToken, int accountId) {
         return new ValidatedCrudRequester<UserProfileResponseModel>(RequestSpec.userRequest(userToken),
         Endpoint.USER_PROFILE,

@@ -52,8 +52,12 @@ public class UserCanChangeUsernameTest extends BaseTest {
 
     @ParameterizedTest
     @MethodSource("api.generators.RandomData#NegativeNames")
-    public void userCantChangeUsernameUnAuthAdmin(String invalidName) {
+    public void userCantChangeUsernameUnAuthAdmin( ) {
         AdminSteps.createTokenUnAuth();
+    }
+    @Test
+    public void CreateUserWithOutToken( ) {
+        UserProfileSteps.createUserWithOutToken();
     }
 
 }
