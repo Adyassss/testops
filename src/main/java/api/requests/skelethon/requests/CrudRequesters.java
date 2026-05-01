@@ -1,5 +1,6 @@
 package api.requests.skelethon.requests;
 
+import api.configs.Config;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -10,7 +11,7 @@ import api.requests.skelethon.interfaces.CrudEndpointInterface;
 import static io.restassured.RestAssured.given;
 
 public class CrudRequesters extends HttpRequest implements CrudEndpointInterface {
-
+    private final static String API_VERSION = Config.getProperty("apiVersion");
     public CrudRequesters(RequestSpecification requestSpecification, Endpoint endpoint, ResponseSpecification responseSpecification) {
         super(requestSpecification, endpoint, responseSpecification);
     }
@@ -21,7 +22,7 @@ public class CrudRequesters extends HttpRequest implements CrudEndpointInterface
         return given()
                 .spec(requestSpecification)
                 .body(body)
-                .post(endpoint.getUrl())
+                .post(API_VERSION + endpoint.getUrl())
                 .then()
                 .assertThat()
                 .spec(responseSpecification);
@@ -31,7 +32,7 @@ public class CrudRequesters extends HttpRequest implements CrudEndpointInterface
     public ValidatableResponse get() {
         return given()
                 .spec(requestSpecification)
-                .get(endpoint.getUrl())
+                .get(API_VERSION + endpoint.getUrl())
                 .then()
                 .assertThat()
                 .spec(responseSpecification);
@@ -42,7 +43,7 @@ public class CrudRequesters extends HttpRequest implements CrudEndpointInterface
         return given()
                 .spec(requestSpecification)
                 .body(baseModel)
-                .put(endpoint.getUrl())
+                .put(API_VERSION + endpoint.getUrl())
                 .then()
                 .assertThat()
                 .spec(responseSpecification);
@@ -52,7 +53,7 @@ public class CrudRequesters extends HttpRequest implements CrudEndpointInterface
     public ValidatableResponse delete(int id) {
         return given()
                 .spec(requestSpecification)
-                .delete(endpoint.getUrl()+"/"+id)
+                .delete(API_VERSION + endpoint.getUrl()+"/"+id)
                 .then()
                 .assertThat()
                 .spec(responseSpecification);
