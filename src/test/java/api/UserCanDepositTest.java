@@ -9,7 +9,7 @@ import api.requests.steps.AdminSteps;
 import api.requests.steps.UserDepositSteps;
 import api.requests.steps.UserProfileSteps;
 
-public class UserCanDepositTest {
+public class UserCanDepositTest extends BaseTest {
 
     @Test
     public void userCanDeposit() {

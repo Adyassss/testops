@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/steps/AdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/steps/AdminSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/steps/ChangeNameSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/steps/ChangeNameSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/requests/steps/UserDepositSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/requests/steps/UserDepositSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/UserCanChangeUsernameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UserCanChangeUsernameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/UserCanDepositTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UserCanDepositTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/UserCanTransferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UserCanTransferTest.java" afterDir="false" />
@@ -117,11 +117,13 @@
     "JUnit.UserCanChangeNameUiTest.executor": "Run",
     "JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanChangeNameUiTest.userChangeNameWithNotCorrectDataTest.executor": "Run",
+    "JUnit.UserCanChangeUsernameTest.AdminCantChangeUsername.executor": "Run",
     "JUnit.UserCanChangeUsernameTest.adminCreateUser.executor": "Run",
     "JUnit.UserCanChangeUsernameTest.executor": "Run",
     "JUnit.UserCanChangeUsernameTest.userCanChangeUsername (1).executor": "Run",
     "JUnit.UserCanChangeUsernameTest.userCanChangeUsername.executor": "Run",
     "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuth.executor": "Run",
+    "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin.executor": "Run",
     "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData (1).executor": "Run",
     "JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData.executor": "Run",
     "JUnit.UserCanDeposit.authUser.executor": "Run",
@@ -140,6 +142,7 @@
     "JUnit.UserCanDepositTest.userCantDepositWithAccess.executor": "Run",
     "JUnit.UserCanDepositTest.userCantDepositWithInvalidData (1).executor": "Run",
     "JUnit.UserCanDepositTest.userCantDepositWithInvalidData.executor": "Run",
+    "JUnit.UserCanDepositTest.userCantDepositWithUnAuth.executor": "Run",
     "JUnit.UserCanDepositUI.UserDepositWithCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUI.UserDepositWithNotCorrectDataTest.executor": "Run",
     "JUnit.UserCanDepositUI.executor": "Run",
@@ -217,8 +220,8 @@
       <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanDepositTest.userCantDepositWithUnAuth">
-    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameUnAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin">
+    <configuration name="UserCanChangeUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -228,13 +231,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="api" />
       <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCantChangeUsernameUnAuth(java.lang.String)" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCanChangeUsernameTest.AdminCantChangeUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nbank-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api" />
+      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
+      <option name="METHOD_NAME" value="AdminCantChangeUsername(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -244,7 +262,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="api" />
       <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCantChangeUsernameWithInvalidData(java.lang.String)" />
+      <option name="METHOD_NAME" value="userCantChangeUsernameUnAuthAdmin(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -282,22 +300,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanTransferTest.userCantTransferMoneyUnAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanTransferTest" />
-      <option name="METHOD_NAME" value="userCantTransferMoneyUnAuth(float)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="nbank-tests" />
       <method v="2">
@@ -323,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin" />
+        <item itemvalue="JUnit.UserCanChangeUsernameTest.AdminCantChangeUsername" />
+        <item itemvalue="JUnit.UserCanChangeUsernameTest" />
         <item itemvalue="JUnit.UserCanDepositTest.userCantDepositWithUnAuth" />
         <item itemvalue="JUnit.UserCanDepositTest.userCantDepositWithAccess" />
-        <item itemvalue="JUnit.UserCanTransferTest.userCantTransferMoneyUnAuth" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuth" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameWithInvalidData" />
       </list>
     </recent_temporary>
   </component>
@@ -350,14 +352,6 @@
       <updated>1767765301648</updated>
       <workItem from="1767765302934" duration="51857000" />
       <workItem from="1768391854106" duration="33000" />
-    </task>
-    <task id="LOCAL-00035" summary="Allure and swagger coverage">
-      <option name="closed" value="true" />
-      <created>1777172143945</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1777172143945</updated>
     </task>
     <task id="LOCAL-00036" summary="Allure and swagger coverage">
       <option name="closed" value="true" />
@@ -743,7 +737,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777623317953</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Allure and swagger coverage">
+      <option name="closed" value="true" />
+      <created>1777624512160</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1777624512160</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

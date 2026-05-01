@@ -20,6 +20,14 @@ public class ChangeNameSteps extends BaseSteps {
             .put(UserChangeNameRequestModel.builder().name(name).build());
     }
 
+    public static ValidatableResponse AdminCantChangeName(String name) {
+        return new CrudRequesters(
+            RequestSpec.adminRequest(),
+            Endpoint.CHANGE_NAME,
+            ResponseSpec.notAccess())
+            .put(UserChangeNameRequestModel.builder().name(name).build());
+    }
+
     public static ValidatableResponse changeNameWithInvalidData(String userToken, String name) {
         return new CrudRequesters(
             RequestSpec.userRequest(userToken),

@@ -10,7 +10,7 @@ import api.requests.steps.UserDepositSteps;
 import api.requests.steps.UserProfileSteps;
 import api.requests.steps.UserTransferSteps;
 
-public class UserCanTransferTest {
+public class UserCanTransferTest extends BaseTest {
 
     @Test
     public void userCanTransferMoney() {

@@ -10,8 +10,10 @@ import api.requests.steps.AdminSteps;
 import api.requests.steps.ChangeNameSteps;
 import api.requests.steps.UserProfileSteps;
 
+import javax.validation.constraints.AssertTrue;
 
-public class UserCanChangeUsernameTest {
+
+public class UserCanChangeUsernameTest extends BaseTest {
 
     @Test
     public void userCanChangeUsername() {
@@ -43,16 +45,15 @@ public class UserCanChangeUsernameTest {
 
     @ParameterizedTest
     @MethodSource("api.generators.RandomData#NegativeNames")
-    public void userCantChangeUsernameUnAuth(String invalidName) {
-        String userToken = AdminSteps.createToken();
+    public void AdminCantChangeUsername(String invalidName) {
+        ChangeNameSteps.AdminCantChangeName(invalidName);
 
-        String nameBefore = UserProfileSteps.getUserProfileName(userToken);
+    }
 
-        ChangeNameSteps.changeNameWithUnAuth(RandomData.getUsername(), invalidName);
-
-        String nameAfter = UserProfileSteps.getUserProfileName(userToken);
-
-        ModelAssertions.assertThatModels(nameBefore, nameAfter).match();
+    @ParameterizedTest
+    @MethodSource("api.generators.RandomData#NegativeNames")
+    public void userCantChangeUsernameUnAuthAdmin(String invalidName) {
+        AdminSteps.createTokenUnAuth();
     }
 
 }

@@ -23,13 +23,13 @@ public class AdminSteps extends BaseSteps {
                 .header("Authorization");
     }
 
-    public static AdminCanCreateUserRequest createUser() {
+    public static String createTokenUnAuth() {
         AdminCanCreateUserRequest randomUser = RandomModelGenerator.generate(AdminCanCreateUserRequest.class);
-        new CrudRequesters(RequestSpec.adminRequest(),
+        return new CrudRequesters(RequestSpec.unauthSpec(),
                 Endpoint.ADMIN_USER,
-                ResponseSpec.created())
-                .post(randomUser);
-        SessionStorage.addUsers(randomUser);
-        return randomUser;
+                ResponseSpec.unauthorized())
+                .post(randomUser)
+                .extract()
+                .header("Authorization");
     }
 }
