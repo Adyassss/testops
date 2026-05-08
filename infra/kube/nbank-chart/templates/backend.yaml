@@ -13,7 +13,6 @@ spec:
         app: backend # устанавливаем label на Pod
       annotations:
         co.elastic.logs/enabled: "true"
-        co.elastic.logs/module: springboot
         co.elastic.logs/json.keys_under_root: "true"
         co.elastic.logs/json.add_error_key: "true"
     spec:

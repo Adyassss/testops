@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="Allure and swagger coverage">
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/files/browsers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/backend.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/frontend.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/selenoid-ui.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/selenoid.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/kube/restart_kube.sh" afterDir="false" />
+    <list default="true" id="14ecadaf-ef3b-420f-9d09-356367ab0eb1" name="Changes" comment="kuber">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.swagger-coverage-commandline/bin/swagger-coverage-commandline.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/UserCanChangeUsernameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/UserCanChangeUsernameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/backend.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/kube/nbank-chart/templates/backend.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/UserCanDepositUiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/UserCanDepositUiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +42,12 @@
     &quot;assignee&quot;: &quot;Adyassss&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Adyassss/testops.git",
-    "accountId": "fde6ad36-4354-41c4-a6ff-a12c6c5f9e74"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Adyassss/testops.git&quot;,
+    &quot;accountId&quot;: &quot;fde6ad36-4354-41c4-a6ff-a12c6c5f9e74&quot;
   }
-}]]></component>
+}</component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
@@ -79,6 +69,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.infra.backend: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.infra: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.iteration_1 | #1.executor&quot;: &quot;Run&quot;,
     &quot;HTTP Request.iteration_1 | #4.executor&quot;: &quot;Run&quot;,
@@ -228,7 +219,7 @@
       <command value="mvn -B test -P api" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserCanTransferUiTest">
+  <component name="RunManager" selected="JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest">
     <configuration name="UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
@@ -245,7 +236,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.CreateUserWithOutToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanChangeUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -255,45 +246,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="api" />
       <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="CreateUserWithOutToken" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanChangeUsernameTest" />
-      <option name="METHOD_NAME" value="userCantChangeUsernameUnAuthAdmin(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCanDepositTest.userCanDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nbank-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="MAIN_CLASS_NAME" value="api.UserCanDepositTest" />
-      <option name="METHOD_NAME" value="userCanDeposit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserCanTransferUiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCanDepositUiTest.userDepositWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nbank-tests" />
       <extension name="coverage">
         <pattern>
@@ -302,8 +260,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ui" />
-      <option name="MAIN_CLASS_NAME" value="ui.UserCanTransferUiTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ui.UserCanDepositUiTest" />
+      <option name="METHOD_NAME" value="userDepositWithCorrectDataTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,13 +279,34 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="infra: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="infra/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="infra.backend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="backend" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="infra/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserCanTransferUiTest" />
+        <item itemvalue="JUnit.UserCanDepositUiTest.userDepositWithCorrectDataTest" />
         <item itemvalue="JUnit.UserCanChangeNameUiTest.userChangeNameWithCorrectDataTest" />
-        <item itemvalue="JUnit.UserCanDepositTest.userCanDeposit" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.CreateUserWithOutToken" />
-        <item itemvalue="JUnit.UserCanChangeUsernameTest.userCantChangeUsernameUnAuthAdmin" />
+        <item itemvalue="JUnit.UserCanChangeUsernameTest" />
+        <item itemvalue="Docker.infra: Compose Deployment" />
+        <item itemvalue="Docker.infra.backend: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
